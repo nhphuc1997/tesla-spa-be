@@ -4,8 +4,8 @@ import { ApiProperty } from "@nestjs/swagger";
 
 @Entity()
 export class Category extends Base {
-  @PrimaryGeneratedColumn()
-  id: number
+  @PrimaryGeneratedColumn('uuid')
+  id: string
 
   @Column()
   @ApiProperty({default: 'honda'})
