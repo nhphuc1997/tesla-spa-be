@@ -6,7 +6,7 @@ export const SwaggerConfig = (app: INestApplication, serviceName: string) => {
     .setTitle(`${serviceName}`)
     .setDescription(`The ${serviceName} collection api`)
     .setVersion('1.0.0')
-    .addBearerAuth()
+    // .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup(`${serviceName}/api`, app, document);

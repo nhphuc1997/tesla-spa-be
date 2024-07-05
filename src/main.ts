@@ -9,6 +9,6 @@ async function bootstrap() {
 
   SwaggerConfig(app, config.get<string>('APP_PREFIX'))
 
-  await app.listen(3000);
+  await app.listen(config.get<string>('APP_PORT'));
 }
 bootstrap();
