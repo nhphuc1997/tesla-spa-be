@@ -11,6 +11,9 @@ export class ErrorsInterceptor implements NestInterceptor {
     return next.handle()
       .pipe(
         catchError(err => throwError(() => {
+
+          console.log(err)
+
           return new HttpException({
             data: null,
             statusCode: HttpStatus.BAD_REQUEST,
