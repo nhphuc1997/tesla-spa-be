@@ -21,6 +21,9 @@ import { ColorGroup } from './entities/ColorGroup.entity';
 import { ColorGroupModule } from './modules/color-group/color-group.module';
 import { Image } from './entities/Image.entity';
 import { ImageModule } from './modules/image/image.module';
+import { OptionColorModule } from './modules/option-color/option-color.module';
+import { OptionWheelModule } from './modules/option-wheel/option-wheel.module';
+import { OptionInteratorModule } from './modules/option-interator/option-interator.module';
 
 @Module({
   imports: [
@@ -60,7 +63,10 @@ import { ImageModule } from './modules/image/image.module';
     ProductBasicSizeModule,
     ProductBasicParamModule,
     ColorGroupModule,
-    ImageModule
+    ImageModule,
+    OptionColorModule,
+    OptionWheelModule,
+    OptionInteratorModule
   ],
 })
 export class AppModule {}
