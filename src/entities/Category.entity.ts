@@ -1,5 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { Base } from "./Base.model";
+import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 
 @Entity('category')
