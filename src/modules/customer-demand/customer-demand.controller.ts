@@ -6,9 +6,9 @@ import { CustomerDemand } from 'src/entities/CustomerDemand.entity';
 
 @ApiTags('CUSTOMER DEMAND API')
 @Crud({
-  model: { type: { CustomerDemand } }
+  model: { type: CustomerDemand }
 })
-@Controller('customer-demand')
+@Controller('customer-demands')
 export class CustomerDemandController implements CrudController<CustomerDemand> {
   constructor(public readonly service: CustomerDemandService) { }
 }
