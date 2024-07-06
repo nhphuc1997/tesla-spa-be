@@ -7,11 +7,11 @@ export class Category extends Base {
   @PrimaryGeneratedColumn('uuid')
   id: string
 
-  @Column()
-  @ApiProperty({default: 'honda'})
+  @Column('text')
+  @ApiProperty({ default: 'honda' })
   name: string
 
-  @Column()
-  @ApiProperty({default: 'honda'})
+  @Column('text')
+  @ApiProperty({ default: 'honda' })
   value: string
 }
