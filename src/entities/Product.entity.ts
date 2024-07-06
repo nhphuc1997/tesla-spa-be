@@ -48,6 +48,10 @@ export class Product extends Base {
   @ApiProperty({ default: 5 })
   seat: number
 
+  @Column({ nullable: true })
+  @ApiProperty({ default: null })
+  thumbnail: string
+
   @ApiProperty({ default: 1 })
   @ManyToOne(() => Category, (category) => category.products)
   @JoinColumn()

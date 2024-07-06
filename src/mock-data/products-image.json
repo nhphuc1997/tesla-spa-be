@@ -1,0 +1,20 @@
+{
+  "bulk": [
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720293987/item_3_wi0mf2.jpg",
+      "product": 1
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720293986/item_2_c3gtky.jpg",
+      "product": 1
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720293986/item_1_wjon83.jpg",
+      "product": 1
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720293986/item_4_rbngl1.jpg",
+      "product": 1
+    }
+  ]
+}
