@@ -8,18 +8,22 @@ export class ProductBasicSize extends Base {
   id: number
 
   @Column()
-  @ApiProperty({ default: '1000' })
+  @ApiProperty({ default: 'CITY G	| CITY L | CITY RS' })
+  name: string
+
+  @Column()
+  @ApiProperty({ default: '1467' })
   width: string
 
   @Column()
-  @ApiProperty({ default: '1000' })
+  @ApiProperty({ default: '1748' })
   length: string
 
   @Column()
-  @ApiProperty({ default: '1000' })
+  @ApiProperty({ default: '4580' })
   height: string
 
   @Column()
-  @ApiProperty({ default: '1000' })
+  @ApiProperty({ default: '2600' })
   widthBasic: string
 }

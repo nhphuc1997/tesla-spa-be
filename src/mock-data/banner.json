@@ -1,0 +1,54 @@
+{
+  "bulk": [
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286820/mes8_dvikww.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286820/mes5_df5jgs.png",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286819/mes7_ywtzb9.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286818/mes1_rgmtu0.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286818/mes6_hnbvdf.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286820/mes8_dvikww.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286818/mes3_igf0px.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286818/mes4_geieyb.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286818/mc1_dlxfdq.jpg",
+      "orderNo": 1,
+      "active": true
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720286817/mes2_y584by.jpg",
+      "orderNo": 1,
+      "active": true
+    }
+  ]
+}

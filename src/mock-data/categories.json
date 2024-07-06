@@ -1,0 +1,16 @@
+{
+  "bulk": [
+    {
+      "name": "honda",
+      "value": "honda"
+    },
+    {
+      "name": "maxda",
+      "value": "mazda"
+    },
+    {
+      "name": "lexus",
+      "value": "lexus"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ export class Image extends Base {
   @ApiProperty({ default: 'http://google.com' })
   url: string
 
+  @ApiProperty({ default: 1 })
   @ManyToOne(() => Product, (product) => product.images)
   @JoinColumn()
   product: Relation<Product>

@@ -8,7 +8,11 @@ export class ProductBasicEngine extends Base {
   id: number
 
   @Column()
-  @ApiProperty({ default: 'A25A-FXS' })
+  @ApiProperty({ default: 'CITY G	| CITY L | CITY RS' })
+  name: string
+
+  @Column()
+  @ApiProperty({ default: '1.5L i-VTEC DOHC 4 xi lanh thẳng hàng, 16 van' })
   code: string
 
   @Column()
@@ -16,23 +20,23 @@ export class ProductBasicEngine extends Base {
   type: string
 
   @Column()
-  @ApiProperty({ default: '2487' })
+  @ApiProperty({ default: '1498' })
   displacementVol: string
 
   @Column()
-  @ApiProperty({ default: '(140kw) 188hp/6000rpm' })
+  @ApiProperty({ default: '119 (89 kW)/6.600' })
   maxRound: string
 
   @Column()
-  @ApiProperty({ default: '(140kw) 188hp/6000rpm' })
+  @ApiProperty({ default: '145/4.300' })
   maxMoment: string
 
   @Column()
-  @ApiProperty({ default: 'EURO 6' })
+  @ApiProperty({ default: 'EURO 4,7' })
   standH2O: string
 
   @Column()
-  @ApiProperty({ default: 'CVT' })
+  @ApiProperty({ default: 'Kiểu MacPherson' })
   gear: string
 
   @Column()

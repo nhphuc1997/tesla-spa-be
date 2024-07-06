@@ -1,0 +1,24 @@
+{
+  "bulk": [
+    {
+      "name": "Xe thể thao",
+      "value": "SPORT"
+    },
+    {
+      "name": "Xe 4 chỗ",
+      "value": "4_SEAT"
+    },
+    {
+      "name": "Xe 7 chỗ",
+      "value": "7_SEAT"
+    },
+    {
+      "name": "Xe HYBIRD",
+      "value": "HYBIRD"
+    },
+    {
+      "name": "Xe MPV",
+      "value": "MPV"
+    }
+  ]
+}

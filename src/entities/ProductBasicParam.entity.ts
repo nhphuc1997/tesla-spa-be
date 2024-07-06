@@ -8,11 +8,15 @@ export class ProductBasicParam extends Base {
   id: number
 
   @Column()
+  @ApiProperty({ default: 'CITY G	| CITY L | CITY RS' })
+  name: string
+
+  @Column()
   @ApiProperty({ default: '402mi' })
   total_capacity: string
 
   @Column()
-  @ApiProperty({ default: '130mph' })
+  @ApiProperty({ default: '145/4.300' })
   moment: string
 
   @Column()
