@@ -6,7 +6,6 @@ import { CategoryModule } from './modules/category/category.module';
 import { BannerModule } from './modules/banner/banner.module';
 import { Banner } from './entities/Banner.entity';
 import { ProductModule } from './modules/product/product.module';
-import { Product } from './entities/Product.entity';
 import { OptionColor } from './entities/OptionColor.entity';
 import { OptionInterator } from './entities/OptionInterator.entity';
 import { OptionWheel } from './entities/OptionWheel.entity';
@@ -17,6 +16,8 @@ import { ProductBasicEngine } from './entities/ProductBasicEngine.entity';
 import { ProductBasicEngineModule } from './modules/product-basic-engine/product-basic-engine.module';
 import { ProductBasicSizeModule } from './modules/product-basic-size/product-basic-size.module';
 import { ProductBasicParamModule } from './modules/product-basic-param/product-basic-param.module';
+import { Product } from './entities/Product.entity';
+import { Color } from './entities/Color.entity';
 
 @Module({
   imports: [
@@ -41,7 +42,8 @@ import { ProductBasicParamModule } from './modules/product-basic-param/product-b
           Product,
           ProductBasicParam,
           ProductBasicSize,
-          ProductBasicEngine
+          ProductBasicEngine,
+          Color
         ],
         autoLoadEntities: true,
         synchronize: true,

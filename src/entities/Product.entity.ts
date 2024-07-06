@@ -1,10 +1,11 @@
-import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 import { ProductBasicParam } from "./ProductBasicParam.entity";
 import { ProductBasicSize } from "./ProductBasicSize.entity";
 import { ProductBasicEngine } from "./ProductBasicEngine.entity";
 import { Category } from "./Category.entity";
+import { Color } from "./Color.entity";
 
 @Entity('product')
 export class Product extends Base {
@@ -36,9 +37,13 @@ export class Product extends Base {
   view: string
 
   @ApiProperty({ default: 1 })
-  @ManyToOne(() => Category, (category) => category)
+  @ManyToOne(() => Category, (category) => category.products)
   @JoinColumn()
   category: Category
+
+  @OneToMany(() => Color, (color) => color.product)
+  @JoinColumn()
+  colors: Color[]
 
   @ApiProperty({ default: 1 })
   @OneToOne(() => ProductBasicParam)
