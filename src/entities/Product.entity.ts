@@ -12,6 +12,24 @@ export class Product extends Base {
   name: string
 
   @Column()
+  @ApiProperty({ default: 'honda-civic' })
+  shortDesciption: string
+
+  @Column()
+  @ApiProperty({ default: 'honda-civic' })
+  textIntro: string
+
+  @Column()
   @ApiProperty({ default: '5000' })
   price: string
+
+  @Column()
+  @ApiProperty({ default: 'NEW' })
+  kind: string
+
+  @Column()
+  @ApiProperty({ default: '1' })
+  view: string
+
+  
 }
