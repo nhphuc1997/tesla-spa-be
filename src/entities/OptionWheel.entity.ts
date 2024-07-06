@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn, Relation } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 import { Category } from "./Category.entity";
@@ -20,7 +20,8 @@ export class OptionWheel extends Base {
   @ApiProperty({ default: '12000' })
   price: string
 
+  @ApiProperty({ default: 1 })
   @ManyToOne(() => Category, (category) => category.optionWheel)
   @JoinColumn()
-  category: Category
+  category: Relation<Category>
 }
