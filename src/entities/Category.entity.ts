@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, OneToMany, PrimaryGeneratedColumn, Relation } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 import { Product } from "./Product.entity";
@@ -18,5 +18,5 @@ export class Category extends Base {
 
   @OneToMany(() => Product, (product) => product.category)
   @JoinColumn()
-  products: Product[]
+  products: Relation<Product>
 }

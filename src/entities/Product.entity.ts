@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn, Relation } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 import { ProductBasicParam } from "./ProductBasicParam.entity";
@@ -39,24 +39,24 @@ export class Product extends Base {
   @ApiProperty({ default: 1 })
   @ManyToOne(() => Category, (category) => category.products)
   @JoinColumn()
-  category: Category
+  category: Relation<Category>
 
   @OneToMany(() => Color, (color) => color.product)
   @JoinColumn()
-  colors: Color[]
+  colors: Relation<Color[]>
 
   @ApiProperty({ default: 1 })
   @OneToOne(() => ProductBasicParam)
   @JoinColumn()
-  productBasicParam: ProductBasicParam
+  productBasicParam: Relation<ProductBasicParam>
 
   @ApiProperty({ default: 1 })
   @OneToOne(() => ProductBasicSize)
   @JoinColumn()
-  productBasicSize: ProductBasicSize
+  productBasicSize: Relation<ProductBasicSize>
 
   @ApiProperty({ default: 1 })
   @OneToOne(() => ProductBasicEngine)
   @JoinColumn()
-  productBasicEngine: ProductBasicEngine
+  productBasicEngine: Relation<ProductBasicEngine>
 }
