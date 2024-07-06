@@ -1,6 +1,7 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
+import { Category } from "./Category.entity";
 
 @Entity('option_color')
 export class OptionColor extends Base {
@@ -18,4 +19,8 @@ export class OptionColor extends Base {
   @Column()
   @ApiProperty({ default: '2222' })
   price: string
+
+  @ManyToOne(() => Category, (category) => category.optionColor)
+  @JoinColumn()
+  category: Category
 }

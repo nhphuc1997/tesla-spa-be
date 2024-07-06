@@ -9,11 +9,13 @@ import { Crud, CrudController } from '@dataui/crud';
   model: { type: Category },
   query: {
     join: {
-      products: { eager: true }
+      optionColor: { eager: true },
+      optionWheel: { eager: true },
+      optionInterator: { eager: true },
     }
   }
 })
 @Controller('categories')
-export class CategoryController implements CrudController<Category>{
-  constructor(public readonly service: CategoryService) {}
+export class CategoryController implements CrudController<Category> {
+  constructor(public readonly service: CategoryService) { }
 }

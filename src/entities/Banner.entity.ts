@@ -9,7 +9,11 @@ export class Banner extends Base {
 
   @Column()
   @ApiProperty({ default: 'http://google.com' })
-  imageUrl: string
+  url: string
+
+  @Column()
+  @ApiProperty({ default: 1 })
+  orderNo: number
 
   @Column()
   @ApiProperty({ default: true })
