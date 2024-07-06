@@ -1,4 +1,7 @@
-import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn, Relation } from "typeorm";
+import {
+  Column, Entity, JoinColumn,
+  ManyToOne, OneToMany, PrimaryGeneratedColumn, Relation
+} from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 import { ProductBasicParam } from "./ProductBasicParam.entity";
@@ -6,6 +9,7 @@ import { ProductBasicSize } from "./ProductBasicSize.entity";
 import { ProductBasicEngine } from "./ProductBasicEngine.entity";
 import { Category } from "./Category.entity";
 import { ColorGroup } from "./ColorGroup.entity";
+import { Image } from "./Image.entity";
 
 @Entity('product')
 export class Product extends Base {
@@ -64,4 +68,8 @@ export class Product extends Base {
   @ManyToOne(() => ProductBasicEngine)
   @JoinColumn()
   productBasicEngine: Relation<ProductBasicEngine>
+
+  @OneToMany(() => Image, (image) => image.product)
+  @JoinColumn()
+  images: Relation<Image[]>
 }

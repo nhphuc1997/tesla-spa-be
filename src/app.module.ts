@@ -19,6 +19,7 @@ import { ProductBasicParamModule } from './modules/product-basic-param/product-b
 import { Product } from './entities/Product.entity';
 import { ColorGroup } from './entities/ColorGroup.entity';
 import { ColorGroupModule } from './modules/color-group/color-group.module';
+import { Image } from './entities/Image.entity';
 
 @Module({
   imports: [
@@ -44,7 +45,8 @@ import { ColorGroupModule } from './modules/color-group/color-group.module';
           ProductBasicParam,
           ProductBasicSize,
           ProductBasicEngine,
-          ColorGroup
+          ColorGroup,
+          Image
         ],
         autoLoadEntities: true,
         synchronize: true,
