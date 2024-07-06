@@ -24,6 +24,8 @@ import { ImageModule } from './modules/image/image.module';
 import { OptionColorModule } from './modules/option-color/option-color.module';
 import { OptionWheelModule } from './modules/option-wheel/option-wheel.module';
 import { OptionInteratorModule } from './modules/option-interator/option-interator.module';
+import { CustomerDemand } from './entities/CustomerDemand.entity';
+import { CustomerDemandModule } from './modules/customer-demand/customer-demand.module';
 
 @Module({
   imports: [
@@ -50,7 +52,8 @@ import { OptionInteratorModule } from './modules/option-interator/option-interat
           ProductBasicSize,
           ProductBasicEngine,
           ColorGroup,
-          Image
+          Image,
+          CustomerDemand,
         ],
         autoLoadEntities: true,
         synchronize: true,
@@ -66,7 +69,8 @@ import { OptionInteratorModule } from './modules/option-interator/option-interat
     ImageModule,
     OptionColorModule,
     OptionWheelModule,
-    OptionInteratorModule
+    OptionInteratorModule,
+    CustomerDemandModule
   ],
 })
-export class AppModule {}
+export class AppModule { }
