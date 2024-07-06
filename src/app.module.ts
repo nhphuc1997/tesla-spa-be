@@ -18,6 +18,7 @@ import { ProductBasicSizeModule } from './modules/product-basic-size/product-bas
 import { ProductBasicParamModule } from './modules/product-basic-param/product-basic-param.module';
 import { Product } from './entities/Product.entity';
 import { Color } from './entities/Color.entity';
+import { ColorModule } from './modules/color/color.module';
 
 @Module({
   imports: [
@@ -54,7 +55,8 @@ import { Color } from './entities/Color.entity';
     ProductModule,
     ProductBasicEngineModule,
     ProductBasicSizeModule,
-    ProductBasicParamModule
+    ProductBasicParamModule,
+    ColorModule
   ],
 })
 export class AppModule {}
