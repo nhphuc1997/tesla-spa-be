@@ -3,6 +3,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Category } from './entities/Category.entity';
 import { CategoryModule } from './modules/category/category.module';
+import { CarModule } from './modules/car/car.module';
+import { BannerModule } from './modules/banner/banner.module';
 
 @Module({
   imports: [
@@ -21,7 +23,9 @@ import { CategoryModule } from './modules/category/category.module';
         synchronize: true,
       })
     }),
-    CategoryModule
+    CategoryModule,
+    CarModule,
+    BannerModule
   ],
 })
 export class AppModule {}
