@@ -8,7 +8,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = app.get(ConfigService)
 
-  SwaggerConfig(app, config.get<string>('APP_PREFIX'))
+  SwaggerConfig(app, config.get<string>('APP_PREFIX'));
 
   app.useGlobalPipes(new ValidationPipe({ 
     forbidUnknownValues: false 

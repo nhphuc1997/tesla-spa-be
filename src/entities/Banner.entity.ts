@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 
-@Entity('category')
+@Entity('banner')
 export class Banner extends Base {
   @PrimaryGeneratedColumn()
   id: number

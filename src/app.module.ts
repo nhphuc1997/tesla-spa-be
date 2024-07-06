@@ -5,6 +5,8 @@ import { Category } from './entities/Category.entity';
 import { CategoryModule } from './modules/category/category.module';
 import { CarModule } from './modules/car/car.module';
 import { BannerModule } from './modules/banner/banner.module';
+import { Banner } from './entities/Banner.entity';
+import { Car } from './entities/Car.entity';
 
 @Module({
   imports: [
@@ -19,7 +21,7 @@ import { BannerModule } from './modules/banner/banner.module';
         username: config.get('APP_DB_USERNAME'),
         password: config.get('APP_DB_PASSWORD'),
         database: config.get('APP_DB_DATABASE'),
-        entities: [Category],
+        entities: [Category, Banner, Car],
         synchronize: true,
       })
     }),
