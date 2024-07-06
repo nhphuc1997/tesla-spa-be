@@ -14,6 +14,8 @@ import { ApiTags } from '@nestjs/swagger';
       productBasicSize: { eager: true },
       productBasicEngine: { eager: true },
       category: { eager: true },
+      images: { eager: true },
+      colorGroup: { eager: true },
     }
   }
 })
