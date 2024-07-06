@@ -7,6 +7,13 @@ import { BannerModule } from './modules/banner/banner.module';
 import { Banner } from './entities/Banner.entity';
 import { ProductModule } from './modules/product/product.module';
 import { Product } from './entities/Product.entity';
+import { OptionColor } from './entities/OptionColor.entity';
+import { OptionInterator } from './entities/OptionInterator.entity';
+import { OptionWheel } from './entities/OptionWheel.entity';
+import { Order } from './entities/Order.entity';
+import { ProductBasicParam } from './entities/ProductBasicParam.entity';
+import { ProductBasicSize } from './entities/ProductBasicSize.entity';
+import { ProductBasicEngine } from './entities/ProductBasicEngine.entity';
 
 @Module({
   imports: [
@@ -21,7 +28,19 @@ import { Product } from './entities/Product.entity';
         username: config.get('APP_DB_USERNAME'),
         password: config.get('APP_DB_PASSWORD'),
         database: config.get('APP_DB_DATABASE'),
-        entities: [Category, Banner, Product],
+        entities: [
+          Banner,
+          Category,
+          OptionColor,
+          OptionInterator,
+          OptionWheel,
+          Order,
+          Product,
+          ProductBasicParam,
+          ProductBasicSize,
+          ProductBasicEngine
+        ],
+        autoLoadEntities: true,
         synchronize: true,
       })
     }),

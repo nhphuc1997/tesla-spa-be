@@ -3,7 +3,7 @@ import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 
 @Entity('option')
-export class Option extends Base {
+export class OptionColor extends Base {
   @PrimaryGeneratedColumn()
   id: number
 
