@@ -1,0 +1,32 @@
+{
+  "bulk": [
+    {
+      "name": "CITY G| CITY L | CITY RS",
+      "width": "1467",
+      "length": "1748",
+      "height": "4580",
+      "widthBasic": "2600"
+    },
+    {
+      "name": "BR-V G | BR-V L",
+      "width": "4.490",
+      "length": "1780",
+      "height": "1685",
+      "widthBasic": "2700"
+    },
+    {
+      "name": "HR-V G | HR-V L | HR-V RS",
+      "width": "4.490",
+      "length": "1780",
+      "height": "1685",
+      "widthBasic": "2700"
+    },
+    {
+      "name": "HR-V G | HR-V L | HR-V RS",
+      "width": "4678",
+      "length": "1802",
+      "height": "1415",
+      "widthBasic": "2735"
+    }
+  ]
+}

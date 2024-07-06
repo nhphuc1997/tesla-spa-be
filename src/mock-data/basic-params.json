@@ -1,0 +1,28 @@
+{
+  "bulk": [
+    {
+      "name": "CITY G | CITY L | CITY RS",
+      "total_capacity": "402mi",
+      "moment": "145/4.300",
+      "acceleration": "3.1sec"
+    },
+    {
+      "name": "BR-V G | BR-V L",
+      "total_capacity": "402mi",
+      "moment": "145/4.300",
+      "acceleration": "3.1sec"
+    },
+    {
+      "name": "HR-V G | HR-V L | HR-V RS",
+      "total_capacity": "402mi",
+      "moment": "145/4.300",
+      "acceleration": "3.1sec"
+    },
+    {
+      "name": "HR-V G | HR-V L | HR-V RS",
+      "total_capacity": "402mi",
+      "moment": "145/4.300",
+      "acceleration": "3.1sec"
+    }
+  ]
+}

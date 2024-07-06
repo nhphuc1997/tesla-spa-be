@@ -1,0 +1,52 @@
+{
+  "bulk": [
+    {
+      "name": "CITY G| CITY L | CITY RS",
+      "code": "1.5L i-VTEC DOHC 4 xi lanh thẳng hàng, 16 van",
+      "type": "Vô cấp CVT",
+      "displacementVol": "1498",
+      "maxRound": "119 (89 kW)/6.600",
+      "maxMoment": "145/4.300",
+      "standH2O": "EURO 5,6",
+      "gear": "Phun xăng điện tử/ PGM-FI",
+      "moveSystem": "AWD",
+      "driverMode": "Eco/Normal/Sport"
+    },
+    {
+      "name": "BR-V G | BR-V L",
+      "code": "1,5L DOHC i-VTEC, 4 xi lanh thẳng hàng, 16 van",
+      "type": "Vô cấp CVT",
+      "displacementVol": "1498",
+      "maxRound": "119 (89 kW)/6.600",
+      "maxMoment": "145/4.300",
+      "standH2O": "EURO 42",
+      "gear": "Phun xăng điện tử/ PGM-FI",
+      "moveSystem": "AWD",
+      "driverMode": "Eco/Normal/Sport"
+    },
+    {
+      "name": "HR-V G | HR-V L | HR-V RS",
+      "code": "1.5L i-VTEC, 4 kỳ,  4 xi-lanh thẳng hàng ",
+      "type": "Vô cấp CVT",
+      "displacementVol": "1498",
+      "maxRound": "119 (89 kW)/6.600",
+      "maxMoment": "145/4.300",
+      "standH2O": "EURO 42",
+      "gear": "Phun xăng điện tử/ PGM-FI",
+      "moveSystem": "AWD",
+      "driverMode": "Eco/Normal/Sport"
+    },
+    {
+      "name": "CIVIC E | CIVIC G | CIVIC RS ",
+      "code": "1.5L DOHC VTEC TURBO, 4 xi-lanh thẳng hàng, 16 van",
+      "type": "Vô cấp CVT",
+      "displacementVol": "1498",
+      "maxRound": "176 (131 kW)/6.000",
+      "maxMoment": "240/1.700-4.500",
+      "standH2O": "EURO 47",
+      "gear": "PGM-FI (Phun xăng trực tiếp)",
+      "moveSystem": "AWD",
+      "driverMode": "Eco/Normal/Sport"
+    }
+  ]
+}
