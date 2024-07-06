@@ -6,7 +6,7 @@ import { Crud, CrudController } from '@dataui/crud';
 
 @ApiTags('CATEGORY API')
 @Crud({model: {type: Category}})
-@Controller('category')
+@Controller('categories')
 export class CategoryController implements CrudController<Category>{
   constructor(public readonly service: CategoryService) {}
 }
