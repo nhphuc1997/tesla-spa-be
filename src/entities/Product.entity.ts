@@ -5,7 +5,7 @@ import { ProductBasicParam } from "./ProductBasicParam.entity";
 import { ProductBasicSize } from "./ProductBasicSize.entity";
 import { ProductBasicEngine } from "./ProductBasicEngine.entity";
 import { Category } from "./Category.entity";
-import { Color } from "./Color.entity";
+import { ColorGroup } from "./ColorGroup.entity";
 
 @Entity('product')
 export class Product extends Base {
@@ -36,27 +36,32 @@ export class Product extends Base {
   @ApiProperty({ default: '1' })
   view: string
 
+  @Column()
+  @ApiProperty({ default: 'Hj-1' })
+  color: string
+
   @ApiProperty({ default: 1 })
   @ManyToOne(() => Category, (category) => category.products)
   @JoinColumn()
   category: Relation<Category>
 
-  @OneToMany(() => Color, (color) => color.product)
+  @ApiProperty({ default: 1 })
+  @ManyToOne(() => ColorGroup)
   @JoinColumn()
-  colors: Relation<Color[]>
+  colorGroup: Relation<ColorGroup>
 
   @ApiProperty({ default: 1 })
-  @OneToOne(() => ProductBasicParam)
+  @ManyToOne(() => ProductBasicParam)
   @JoinColumn()
   productBasicParam: Relation<ProductBasicParam>
 
   @ApiProperty({ default: 1 })
-  @OneToOne(() => ProductBasicSize)
+  @ManyToOne(() => ProductBasicSize)
   @JoinColumn()
   productBasicSize: Relation<ProductBasicSize>
 
   @ApiProperty({ default: 1 })
-  @OneToOne(() => ProductBasicEngine)
+  @ManyToOne(() => ProductBasicEngine)
   @JoinColumn()
   productBasicEngine: Relation<ProductBasicEngine>
 }

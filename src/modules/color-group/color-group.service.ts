@@ -1,12 +1,12 @@
 import { TypeOrmCrudService } from '@dataui/crud-typeorm';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Color } from 'src/entities/Color.entity';
+import { ColorGroup } from 'src/entities/ColorGroup.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()
-export class ColorService extends TypeOrmCrudService<Color> {
-  constructor(@InjectRepository(Color) repo: Repository<Color>) {
+export class ColorGroupService extends TypeOrmCrudService<ColorGroup> {
+  constructor(@InjectRepository(ColorGroup) repo: Repository<ColorGroup>) {
     super(repo)
   }
 }

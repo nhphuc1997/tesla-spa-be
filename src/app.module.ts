@@ -17,8 +17,8 @@ import { ProductBasicEngineModule } from './modules/product-basic-engine/product
 import { ProductBasicSizeModule } from './modules/product-basic-size/product-basic-size.module';
 import { ProductBasicParamModule } from './modules/product-basic-param/product-basic-param.module';
 import { Product } from './entities/Product.entity';
-import { Color } from './entities/Color.entity';
-import { ColorModule } from './modules/color/color.module';
+import { ColorGroup } from './entities/ColorGroup.entity';
+import { ColorGroupModule } from './modules/color-group/color-group.module';
 
 @Module({
   imports: [
@@ -44,7 +44,7 @@ import { ColorModule } from './modules/color/color.module';
           ProductBasicParam,
           ProductBasicSize,
           ProductBasicEngine,
-          Color
+          ColorGroup
         ],
         autoLoadEntities: true,
         synchronize: true,
@@ -56,7 +56,7 @@ import { ColorModule } from './modules/color/color.module';
     ProductBasicEngineModule,
     ProductBasicSizeModule,
     ProductBasicParamModule,
-    ColorModule
+    ColorGroupModule
   ],
 })
 export class AppModule {}
