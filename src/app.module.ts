@@ -14,6 +14,7 @@ import { Order } from './entities/Order.entity';
 import { ProductBasicParam } from './entities/ProductBasicParam.entity';
 import { ProductBasicSize } from './entities/ProductBasicSize.entity';
 import { ProductBasicEngine } from './entities/ProductBasicEngine.entity';
+import { ProductBasicEngineModule } from './modules/product-basic-engine/product-basic-engine.module';
 
 @Module({
   imports: [
@@ -46,7 +47,8 @@ import { ProductBasicEngine } from './entities/ProductBasicEngine.entity';
     }),
     CategoryModule,
     BannerModule,
-    ProductModule
+    ProductModule,
+    ProductBasicEngineModule
   ],
 })
 export class AppModule {}

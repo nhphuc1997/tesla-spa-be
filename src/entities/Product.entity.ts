@@ -35,18 +35,22 @@ export class Product extends Base {
   @ApiProperty({ default: '1' })
   view: string
 
+  @ApiProperty({ default: 1 })
   @OneToOne(() => Category)
   @JoinColumn()
   category: Category
 
+  @ApiProperty({ default: 1 })
   @OneToOne(() => ProductBasicParam)
   @JoinColumn()
   productBasicParam: ProductBasicParam
 
+  @ApiProperty({ default: 1 })
   @OneToOne(() => ProductBasicSize)
   @JoinColumn()
   productBasicSize: ProductBasicSize
 
+  @ApiProperty({ default: 1 })
   @OneToOne(() => ProductBasicEngine)
   @JoinColumn()
   productBasicEngine: ProductBasicEngine
