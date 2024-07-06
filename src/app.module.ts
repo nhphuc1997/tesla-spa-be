@@ -3,10 +3,10 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Category } from './entities/Category.entity';
 import { CategoryModule } from './modules/category/category.module';
-import { CarModule } from './modules/car/car.module';
 import { BannerModule } from './modules/banner/banner.module';
 import { Banner } from './entities/Banner.entity';
-import { Car } from './entities/Car.entity';
+import { ProductModule } from './modules/product/product.module';
+import { Product } from './entities/Product.entity';
 
 @Module({
   imports: [
@@ -21,13 +21,13 @@ import { Car } from './entities/Car.entity';
         username: config.get('APP_DB_USERNAME'),
         password: config.get('APP_DB_PASSWORD'),
         database: config.get('APP_DB_DATABASE'),
-        entities: [Category, Banner, Car],
+        entities: [Category, Banner, Product],
         synchronize: true,
       })
     }),
     CategoryModule,
-    CarModule,
-    BannerModule
+    BannerModule,
+    ProductModule
   ],
 })
 export class AppModule {}
