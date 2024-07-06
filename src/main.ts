@@ -10,9 +10,9 @@ async function bootstrap() {
 
   SwaggerConfig(app, config.get<string>('APP_PREFIX'))
 
-  // app.useGlobalPipes(new ValidationPipe({ 
-  //   forbidUnknownValues: false 
-  // }))
+  app.useGlobalPipes(new ValidationPipe({ 
+    forbidUnknownValues: false 
+  }))
   await app.listen(config.get<string>('APP_PORT'));
 }
 bootstrap();
