@@ -20,6 +20,7 @@ import { Product } from './entities/Product.entity';
 import { ColorGroup } from './entities/ColorGroup.entity';
 import { ColorGroupModule } from './modules/color-group/color-group.module';
 import { Image } from './entities/Image.entity';
+import { ImageModule } from './modules/image/image.module';
 
 @Module({
   imports: [
@@ -58,7 +59,8 @@ import { Image } from './entities/Image.entity';
     ProductBasicEngineModule,
     ProductBasicSizeModule,
     ProductBasicParamModule,
-    ColorGroupModule
+    ColorGroupModule,
+    ImageModule
   ],
 })
 export class AppModule {}
