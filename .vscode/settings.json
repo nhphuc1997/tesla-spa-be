@@ -6,13 +6,12 @@
         "enableSsl": "Disabled"
       },
       "previewLimit": 50,
-      "server": "0.0.0.0",
+      "server": "localhost",
       "port": 3306,
       "driver": "MySQL",
-      "name": "tesla",
+      "name": "tesla-local",
       "database": "tesla",
-      "username": "root",
-      "password": "password"
+      "username": "root"
     }
   ]
 }

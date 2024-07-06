@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 
-@Entity('option')
+@Entity('option_wheel')
 export class OptionWheel extends Base {
   @PrimaryGeneratedColumn()
   id: number

@@ -36,7 +36,7 @@ export class Product extends Base {
   view: string
 
   @ApiProperty({ default: 1 })
-  @ManyToOne(() => Category, (category) => category.products)
+  @ManyToOne(() => Category, (category) => category)
   @JoinColumn()
   category: Category
 
