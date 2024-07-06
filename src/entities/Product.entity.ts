@@ -73,7 +73,6 @@ export class Product extends Base {
   @JoinColumn()
   productBasicEngine: Relation<ProductBasicEngine>
 
-  @ApiProperty({ default: 1 })
   @OneToMany(() => Image, (image) => image.product)
   @JoinColumn()
   images: Relation<Image[]>
