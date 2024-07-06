@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 import { ProductBasicParam } from "./ProductBasicParam.entity";
@@ -36,7 +36,7 @@ export class Product extends Base {
   view: string
 
   @ApiProperty({ default: 1 })
-  @OneToOne(() => Category)
+  @ManyToOne(() => Category, (category) => category.products)
   @JoinColumn()
   category: Category
 

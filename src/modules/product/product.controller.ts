@@ -6,7 +6,17 @@ import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('PRODUCT API')
 @Controller('products')
-@Crud({model: {type: Product}})
+@Crud({
+  model: { type: Product },
+  query: {
+    join: {
+      productBasicParam: { eager: true },
+      productBasicSize: { eager: true },
+      productBasicEngine: { eager: true },
+      category: { eager: true },
+    }
+  }
+})
 export class ProductController implements CrudController<Product> {
   constructor(public readonly service: ProductService) {}
 }
