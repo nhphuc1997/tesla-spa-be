@@ -1,5 +1,7 @@
 import {
   Column, Entity, JoinColumn,
+  JoinTable,
+  ManyToMany,
   ManyToOne, OneToMany, PrimaryGeneratedColumn, Relation
 } from "typeorm";
 import { Base } from "./Base.entity";
@@ -10,6 +12,7 @@ import { ProductBasicEngine } from "./ProductBasicEngine.entity";
 import { Category } from "./Category.entity";
 import { ColorGroup } from "./ColorGroup.entity";
 import { Image } from "./Image.entity";
+import { Order } from "./Order.entity";
 
 @Entity('product')
 export class Product extends Base {
@@ -80,4 +83,8 @@ export class Product extends Base {
   @OneToMany(() => Image, (image) => image.product)
   @JoinColumn()
   images: Relation<Image[]>
+
+  @ApiProperty({ default: 1 })
+  @ManyToMany(() => Category, (category) => category.products)
+  orders: Relation<Order[]>
 }

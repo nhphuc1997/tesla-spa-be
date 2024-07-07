@@ -26,6 +26,7 @@ import { OptionWheelModule } from './modules/option-wheel/option-wheel.module';
 import { OptionInteratorModule } from './modules/option-interator/option-interator.module';
 import { CustomerDemand } from './entities/CustomerDemand.entity';
 import { CustomerDemandModule } from './modules/customer-demand/customer-demand.module';
+import { OrderModule } from './modules/order/order.module';
 
 @Module({
   imports: [
@@ -70,7 +71,8 @@ import { CustomerDemandModule } from './modules/customer-demand/customer-demand.
     OptionColorModule,
     OptionWheelModule,
     OptionInteratorModule,
-    CustomerDemandModule
+    CustomerDemandModule,
+    OrderModule
   ],
 })
 export class AppModule { }
