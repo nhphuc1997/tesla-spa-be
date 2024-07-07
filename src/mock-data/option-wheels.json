@@ -1,0 +1,16 @@
+{
+  "bulk": [
+    {
+      "description": "18\"\" Photon Wheels Included All-Season Tires Range (EPA est.) : 341mi.",
+      "imageUrl": true,
+      "price": "12000000",
+      "category": 1
+    },
+    {
+      "description": "19\"\" Photon Wheels Included All-Season Tires Range (EPA est.) : 341mi.",
+      "imageUrl": true,
+      "price": "19000000",
+      "category": 1
+    }
+  ]
+}

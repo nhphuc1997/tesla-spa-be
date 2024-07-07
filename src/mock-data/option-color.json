@@ -1,0 +1,22 @@
+{
+  "bulk": [
+    {
+      "description": "Premium",
+      "imageUrl": "http://google.com",
+      "price": "3000000",
+      "category": 1
+    },
+    {
+      "description": "Limit Edition",
+      "imageUrl": "http://google.com",
+      "price": "5000000",
+      "category": 1
+    },
+    {
+      "description": "Standard",
+      "imageUrl": "http://google.com",
+      "price": "1000000",
+      "category": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "bulk": [
+    {
+      "description": "Trắng",
+      "imageUrl": "http://google.com",
+      "price": "3500000",
+      "category": 1
+    },
+    {
+      "description": "Đen",
+      "imageUrl": "http://google.com",
+      "price": "7500000",
+      "category": 1
+    },
+    {
+      "description": "Da",
+      "imageUrl": "http://google.com",
+      "price": "7500000",
+      "category": 1
+    }
+  ]
+}
