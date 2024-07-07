@@ -9,7 +9,10 @@ import { Order } from 'src/entities/Order.entity';
   model: { type: Order },
   query: {
     join: {
-      products: { eager: true }
+      product: { eager: true },
+      optionColor: { eager: true },
+      optionWheel: { eager: true },
+      optionInterator: { eager: true },
     }
   }
 })
