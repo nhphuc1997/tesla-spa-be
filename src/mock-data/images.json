@@ -2,19 +2,19 @@
   "bulk": [
     {
       "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335083/7be64bc6941c60e65e45da49dc53c1ee_e7vt9b.png",
-      "product": 21
+      "product": 6
     },
     {
       "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335084/2020-honda-fit-mmp-1-1574789897.jpg_ajvmcr.jpg",
-      "product": 21
+      "product": 6
     },
     {
       "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335078/c02496fabfc8a9f8c44cf4e2a980bbac_fqsftk.png",
-      "product": 21
+      "product": 6
     },
     {
       "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335078/2023-Honda-Accord-Exterior-1024x630_y0k4et.jpg",
-      "product": 21
+      "product": 6
     }
   ]
 }

@@ -13,7 +13,7 @@ import { Order } from 'src/entities/Order.entity';
     }
   }
 })
-@Controller('order')
+@Controller('orders')
 export class OrderController implements CrudController<Order> {
   constructor(public readonly service: OrderService) { }
 }

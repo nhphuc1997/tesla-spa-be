@@ -16,12 +16,8 @@ export class Order extends Base {
   orderId: string
 
   @Column()
-  @ApiProperty({ default: 1 })
-  productId: number
-
-  @Column()
-  @ApiProperty({ default: 1 })
-  userId: number
+  @ApiProperty({ default: '123456' })
+  userId: string
 
   @Column()
   @ApiProperty({ default: '012345678' })
