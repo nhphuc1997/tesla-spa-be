@@ -15,7 +15,7 @@ import { Crud, CrudController } from '@dataui/crud';
     }
   }
 })
-@Controller('categories')
+@Controller('tesla-service/categories')
 export class CategoryController implements CrudController<Category> {
   constructor(public readonly service: CategoryService) { }
 }

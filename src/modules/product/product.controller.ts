@@ -5,7 +5,7 @@ import { Product } from 'src/entities/Product.entity';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('PRODUCT API')
-@Controller('products')
+@Controller('tesla-service/products')
 @Crud({
   model: { type: Product },
   query: {
@@ -20,5 +20,5 @@ import { ApiTags } from '@nestjs/swagger';
   }
 })
 export class ProductController implements CrudController<Product> {
-  constructor(public readonly service: ProductService) {}
+  constructor(public readonly service: ProductService) { }
 }

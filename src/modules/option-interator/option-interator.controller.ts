@@ -8,7 +8,7 @@ import { OptionInterator } from 'src/entities/OptionInterator.entity';
 @Crud({
   model: { type: OptionInterator }
 })
-@Controller('option-interator')
+@Controller('tesla-service/option-interator')
 export class OptionInteratorController implements CrudController<OptionInterator> {
   constructor(public readonly service: OptionInteratorService) { }
 }

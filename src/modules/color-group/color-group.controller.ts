@@ -8,7 +8,7 @@ import { ApiTags } from '@nestjs/swagger';
 @Crud({
   model: { type: ColorGroup }
 })
-@Controller('color-groups')
+@Controller('tesla-service/color-groups')
 export class ColorGroupController implements CrudController<ColorGroup> {
-  constructor(public readonly service: ColorGroupService) {}
+  constructor(public readonly service: ColorGroupService) { }
 }

@@ -8,7 +8,7 @@ import { ApiTags } from '@nestjs/swagger';
 @Crud({
   model: { type: OptionColor }
 })
-@Controller('option-color')
+@Controller('tesla-service/option-color')
 export class OptionColorController implements CrudController<OptionColor> {
   constructor(public readonly service: OptionColorService) { }
 }

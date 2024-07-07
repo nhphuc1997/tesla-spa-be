@@ -8,7 +8,7 @@ import { OptionWheel } from 'src/entities/OptionWheel.entity';
 @Crud({
   model: { type: OptionWheel }
 })
-@Controller('option-wheel')
+@Controller('tesla-service/option-wheel')
 export class OptionWheelController implements CrudController<OptionWheel> {
   constructor(public readonly service: OptionWheelService) { }
 }
