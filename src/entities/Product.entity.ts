@@ -83,8 +83,4 @@ export class Product extends Base {
   @OneToMany(() => Image, (image) => image.product)
   @JoinColumn()
   images: Relation<Image[]>
-
-  @ApiProperty({ default: 1 })
-  @ManyToMany(() => Category, (category) => category.products)
-  orders: Relation<Order[]>
 }

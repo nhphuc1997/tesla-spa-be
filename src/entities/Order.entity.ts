@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn, Relation } from "typeorm";
+import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn, Relation } from "typeorm";
 import { Base } from "./Base.entity";
 import { ApiProperty } from "@nestjs/swagger";
 import { Product } from "./Product.entity";
@@ -28,22 +28,20 @@ export class Order extends Base {
   phoneNumber: string
 
   @ApiProperty({ default: 1 })
-  @ManyToMany(() => Product, (product) => product.orders)
+  @ManyToOne(() => Product)
   @JoinTable()
-  products: Relation<Product[]>
+  product: Relation<Product>
 
   @ApiProperty({ default: 1 })
-  @ManyToMany(() => OptionColor)
+  @ManyToOne(() => OptionColor)
   @JoinTable()
-  optionColors: Relation<OptionColor[]>
+  optionColor: Relation<OptionColor>
 
   @ApiProperty({ default: 1 })
-  @ManyToMany(() => OptionWheel)
-  @JoinTable()
-  optionWheels: Relation<OptionWheel[]>
+  @ManyToOne(() => OptionWheel)
+  optionWheel: Relation<OptionWheel>
 
   @ApiProperty({ default: 1 })
-  @ManyToMany(() => OptionInterator)
-  @JoinTable()
-  optionInterator: Relation<OptionInterator[]>
+  @ManyToOne(() => OptionInterator)
+  optionInterator: Relation<OptionInterator>
 }
