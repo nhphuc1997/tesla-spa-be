@@ -1,34 +1,26 @@
 {
   "bulk": [
-    {
-      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335084/2023-lightning-lap-honda-civic-type-r-mu-102-1675451016.jpg_betnwt.jpg",
-      "product": 11
-    },
-    {
-      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335083/7be64bc6941c60e65e45da49dc53c1ee_e7vt9b.png",
-      "product": 11
-    },
-    {
-      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335083/HONDA-CIVIC-2020-02_ds3ewx.jpg",
-      "product": 11
-    },
-    {
-      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335083/HONDA-CIVIC-2020-02_ds3ewx.jpg",
-      "product": 11
-    },
-
+    
 
     {
-      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720335082/Radiant_20Red_20Metallic-RN-155_2C0_2C25-640-en_US_cotrse.jpg",
-      "product": 10
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720419255/2025-mercedes-benz-eqs-sedan-1-european-model-shown-6616a2ce46fa4.jpg_fdjeqp.jpg",
+      "product": 2
     },
     {
-      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720362648/mescedes-benz-s-class-2016-260nw-776980120_rvnymb.jpg",
-      "product": 10
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720419251/Gear-Mercedes-EQS-21C0123_001_anfgdy.jpg",
+      "product": 2
     },
     {
-      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720362648/207434614_y8acbn.jpg",
-      "product": 10
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720419251/2025-mercedes-benz-eqs_tfdr5d.jpg",
+      "product": 2
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720419255/2025-mercedes-benz-eqs-sedan-1-european-model-shown-6616a2ce46fa4.jpg_fdjeqp.jpg",
+      "product": 2
+    },
+    {
+      "url": "https://res.cloudinary.com/dc7irvi43/image/upload/v1720419255/2025-mercedes-benz-eqs-sedan-1-european-model-shown-6616a2ce46fa4.jpg_fdjeqp.jpg",
+      "product": 2
     }
   ]
 }

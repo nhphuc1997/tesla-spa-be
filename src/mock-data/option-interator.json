@@ -17,6 +17,77 @@
       "imageUrl": "http://google.com",
       "price": "7500000",
       "category": 1
+    },
+
+    {
+      "description": "Trắng",
+      "imageUrl": "http://google.com",
+      "price": "27500000",
+      "category": 2
+    },
+    {
+      "description": "Đen",
+      "imageUrl": "http://google.com",
+      "price": "75000000",
+      "category": 2
+    },
+
+    {
+      "description": "Trắng",
+      "imageUrl": "http://google.com",
+      "price": "27500000",
+      "category": 3
+    },
+    {
+      "description": "Đen",
+      "imageUrl": "http://google.com",
+      "price": "175000000",
+      "category": 3
+    },
+
+    {
+      "description": "Trắng",
+      "imageUrl": "http://google.com",
+      "price": "105000000",
+      "category": 4
+    },
+    {
+      "description": "Đen",
+      "imageUrl": "http://google.com",
+      "price": "72000000",
+      "category": 4
+    },
+    {
+      "description": "Đỏ",
+      "imageUrl": "http://google.com",
+      "price": "20000000",
+      "category": 4
+    },
+
+    {
+      "description": "Trắng",
+      "imageUrl": "http://google.com",
+      "price": "37500000",
+      "category": 5
+    },
+    {
+      "description": "Đen",
+      "imageUrl": "http://google.com",
+      "price": "72000000",
+      "category": 5
+    },
+
+    {
+      "description": "Trắng",
+      "imageUrl": "http://google.com",
+      "price": "37500000",
+      "category": 6
+    },
+    {
+      "description": "Da",
+      "imageUrl": "http://google.com",
+      "price": "72000000",
+      "category": 6
     }
   ]
 }

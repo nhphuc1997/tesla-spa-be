@@ -11,6 +11,72 @@
       "imageUrl": true,
       "price": "19000000",
       "category": 1
+    },
+    {
+      "description": "18\"\" Photon Wheels",
+      "imageUrl": true,
+      "price": "15000000",
+      "category": 2
+    },
+    {
+      "description": "19\"\" Photon Wheels",
+      "imageUrl": true,
+      "price": "27000000",
+      "category": 2
+    },
+    {
+      "description": "20\"\" Photon Wheels Titan",
+      "imageUrl": true,
+      "price": "35000000",
+      "category": 3
+    },
+    {
+      "description": "20\"\" Photon Wheels",
+      "imageUrl": true,
+      "price": "27400000",
+      "category": 3
+    },
+    {
+      "description": "19\"\" Photon Wheels Included All-Season Tires Range",
+      "imageUrl": true,
+      "price": "27400000",
+      "category": 3
+    },
+    {
+      "description": "19\"\" Photon Wheels Included All-Season Tires Range",
+      "imageUrl": true,
+      "price": "25400000",
+      "category": 4
+    },
+    {
+      "description": "19\"\" Photon Wheels Included All-Season Tires Range",
+      "imageUrl": true,
+      "price": "22400000",
+      "category": 4
+    },
+    {
+      "description": "19\"\" Photon Wheels Included All-Season Tires Range",
+      "imageUrl": true,
+      "price": "52400000",
+      "category": 5
+    },
+    {
+      "description": "17\"\" Photon Wheels Included All-Season Tires Range",
+      "imageUrl": true,
+      "price": "12400000",
+      "category": 5
+    },
+    {
+      "description": "19\"\" Photon Wheels Tires Range",
+      "imageUrl": true,
+      "price": "52400000",
+      "category": 6
+    },
+    {
+      "description": "17\"\" Photon Wheels Included All-Season",
+      "imageUrl": true,
+      "price": "12400000",
+      "category": 6
     }
   ]
 }

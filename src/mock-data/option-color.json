@@ -17,6 +17,101 @@
       "imageUrl": "http://google.com",
       "price": "1000000",
       "category": 1
+    },
+
+    {
+      "description": "Premium",
+      "imageUrl": "http://google.com",
+      "price": "13500000",
+      "category": 2
+    },
+    {
+      "description": "Limit Edition",
+      "imageUrl": "http://google.com",
+      "price": "13700000",
+      "category": 2
+    },
+    {
+      "description": "Standard Basic",
+      "imageUrl": "http://google.com",
+      "price": "13400000",
+      "category": 2
+    },
+    {
+      "description": "Standard Ultra",
+      "imageUrl": "http://google.com",
+      "price": "9000000",
+      "category": 2
+    },
+
+    {
+      "description": "Premium",
+      "imageUrl": "http://google.com",
+      "price": "13500000",
+      "category": 3
+    },
+    {
+      "description": "Limit Edition",
+      "imageUrl": "http://google.com",
+      "price": "12000000",
+      "category": 3
+    },
+
+    {
+      "description": "Limit Edition",
+      "imageUrl": "http://google.com",
+      "price": "20000000",
+      "category": 4
+    },
+
+    {
+      "description": "Premium",
+      "imageUrl": "http://google.com",
+      "price": "13000000",
+      "category": 5
+    },
+    {
+      "description": "Limit Edition",
+      "imageUrl": "http://google.com",
+      "price": "50000000",
+      "category": 5
+    },
+    {
+      "description": "Standard",
+      "imageUrl": "http://google.com",
+      "price": "10000000",
+      "category": 5
+    },
+
+    {
+      "description": "Premium Ultra",
+      "imageUrl": "http://google.com",
+      "price": "13000000",
+      "category": 6
+    },
+    {
+      "description": "Limit Edition",
+      "imageUrl": "http://google.com",
+      "price": "50000000",
+      "category": 6
+    },
+    {
+      "description": "Limit Ultra",
+      "imageUrl": "http://google.com",
+      "price": "150000000",
+      "category": 6
+    },
+    {
+      "description": "Premium",
+      "imageUrl": "http://google.com",
+      "price": "25000000",
+      "category": 6
+    },
+    {
+      "description": "Instinct Edition",
+      "imageUrl": "http://google.com",
+      "price": "350000000",
+      "category": 6
     }
   ]
 }

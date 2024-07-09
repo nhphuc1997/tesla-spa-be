@@ -12,6 +12,20 @@
       "name": "tesla-local",
       "database": "tesla",
       "username": "root"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "ls-eb66dac1f27cad0612ecc19271fe40c9837577ea.cty26qekwdt0.ap-southeast-1.rds.amazonaws.com",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "super_car_server",
+      "database": "super_car",
+      "username": "dbmasteruser",
+      "password": "1718!#LaKaz"
     }
   ]
 }
