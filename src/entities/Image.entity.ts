@@ -13,4 +13,7 @@ export class Image extends File {
   @ManyToOne(() => Product, (product) => product.images)
   @JoinColumn()
   product: Relation<Product>
+
+  @Column()
+  productId: Relation<Product>
 }

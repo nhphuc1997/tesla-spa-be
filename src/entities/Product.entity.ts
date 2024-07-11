@@ -45,21 +45,36 @@ export class Product extends Base {
   @JoinColumn()
   category: Relation<Category>
 
+  @Column()
+  categoryId: Relation<Category>
+
   @ManyToOne(() => ColorGroup)
   @JoinColumn()
   colorGroup: Relation<ColorGroup>
+
+  @Column()
+  colorGroupId: Relation<ColorGroup>
 
   @ManyToOne(() => ProductBasicParam)
   @JoinColumn()
   productBasicParam: Relation<ProductBasicParam>
 
+  @Column()
+  productBasicParamId: Relation<ProductBasicParam>
+
   @ManyToOne(() => ProductBasicSize)
   @JoinColumn()
   productBasicSize: Relation<ProductBasicSize>
 
+  @Column()
+  productBasicSizeId: Relation<ProductBasicSize>
+
   @ManyToOne(() => ProductBasicEngine)
   @JoinColumn({})
   productBasicEngine: Relation<ProductBasicEngine>
+
+  @Column({})
+  productBasicEngineId: Relation<ProductBasicEngine>
 
   @OneToMany(() => Image, (image) => image.product)
   @JoinColumn()

@@ -19,4 +19,7 @@ export class OptionWheel extends File {
   @ManyToOne(() => Category, (category) => category.optionColor)
   @JoinColumn()
   category: Relation<Category>
+
+  @Column()
+  categoryId: Relation<Category>
 }

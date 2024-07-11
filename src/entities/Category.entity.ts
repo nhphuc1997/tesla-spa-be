@@ -13,9 +13,6 @@ export class Category extends Base {
   @Column()
   name: string
 
-  @Column()
-  value: string
-
   @OneToMany(() => Product, (product) => product.category)
   @JoinColumn()
   products: Relation<Product>

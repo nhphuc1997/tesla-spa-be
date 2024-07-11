@@ -5,7 +5,6 @@ import { OptionColor } from "./OptionColor.entity.js";
 import { OptionWheel } from "./OptionWheel.entity.js";
 import { OptionInterator } from "./OptionInterator.entity.js";
 
-
 @Entity('order')
 export class Order extends Base {
   @PrimaryGeneratedColumn()
@@ -21,16 +20,30 @@ export class Order extends Base {
   phoneNumber: string
 
   @ManyToOne(() => Product)
-  @JoinTable()
+  @JoinColumn()
   product: Relation<Product>
 
+  @Column()
+  productId: Relation<Product>
+
   @ManyToOne(() => OptionColor)
-  @JoinTable()
+  @JoinColumn()
   optionColor: Relation<OptionColor>
 
+  @Column()
+  optionColorId: Relation<OptionColor>
+
   @ManyToOne(() => OptionWheel)
+  @JoinColumn()
   optionWheel: Relation<OptionWheel>
 
+  @Column()
+  optionWheelId: Relation<OptionWheel>
+
   @ManyToOne(() => OptionInterator)
+  @JoinColumn()
   optionInterator: Relation<OptionInterator>
+
+  @Column()
+  optionInteratorId: Relation<OptionInterator>
 }
