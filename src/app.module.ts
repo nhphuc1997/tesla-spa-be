@@ -14,6 +14,10 @@ import { ProductBasicEngine } from './entities/ProductBasicEngine.entity';
 import { ColorGroup } from './entities/ColorGroup.entity';
 import { CustomerDemand } from './entities/CustomerDemand.entity';
 import { Image } from './entities/Image.entity';
+import { BannerModule } from './modules/banner/banner.module';
+import { ProductModule } from './modules/product/product.module';
+import { CategoryModule } from './modules/category/category.module';
+import { OrderModule } from './modules/order/order.module';
 
 @Module({
   imports: [
@@ -46,7 +50,11 @@ import { Image } from './entities/Image.entity';
         autoLoadEntities: true,
         synchronize: true,
       })
-    })
+    }),
+    BannerModule,
+    ProductModule,
+    CategoryModule,
+    OrderModule
   ],
 })
 export class AppModule { }
