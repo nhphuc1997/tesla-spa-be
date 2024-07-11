@@ -1,7 +1,6 @@
-import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
-import { Base } from "./Base.entity";
-import { ApiProperty } from "@nestjs/swagger";
-import { Product } from "./Product.entity";
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn, Relation } from "typeorm";
+import { Base } from "./Base.entity.js";
+import { Product } from "./Product.entity.js";
 
 @Entity('color')
 export class ColorGroup extends Base {
@@ -9,10 +8,9 @@ export class ColorGroup extends Base {
   id: number
 
   @Column()
-  @ApiProperty({ default: '#1h9' })
   name: string
 
   @OneToMany(() => Product, (product) => product.colorGroup)
   @JoinColumn()
-  products: Product[]
+  products: Relation<Product[]>
 }

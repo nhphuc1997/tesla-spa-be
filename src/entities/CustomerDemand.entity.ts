@@ -1,6 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { Base } from "./Base.entity";
-import { ApiProperty } from "@nestjs/swagger";
+import { Base } from "./Base.entity.js";
 
 @Entity('customer_demand')
 export class CustomerDemand extends Base {
@@ -8,10 +7,8 @@ export class CustomerDemand extends Base {
   id: number
 
   @Column()
-  @ApiProperty({ default: 'Xe thể thao' })
   name: string
 
   @Column()
-  @ApiProperty({ default: 'SPORT' })
   value: string
 }

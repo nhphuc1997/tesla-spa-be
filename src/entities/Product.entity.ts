@@ -4,80 +4,61 @@ import {
   ManyToMany,
   ManyToOne, OneToMany, PrimaryGeneratedColumn, Relation
 } from "typeorm";
-import { Base } from "./Base.entity";
-import { ApiProperty } from "@nestjs/swagger";
-import { ProductBasicParam } from "./ProductBasicParam.entity";
-import { ProductBasicSize } from "./ProductBasicSize.entity";
-import { ProductBasicEngine } from "./ProductBasicEngine.entity";
-import { Category } from "./Category.entity";
-import { ColorGroup } from "./ColorGroup.entity";
-import { Image } from "./Image.entity";
-import { Order } from "./Order.entity";
+import { Base } from "./Base.entity.js";
+import { Category } from "./Category.entity.js";
+import { ColorGroup } from "./ColorGroup.entity.js";
+import { ProductBasicParam } from "./ProductBasicParam.entity.js";
+import { ProductBasicSize } from "./ProductBasicSize.entity.js";
+import { ProductBasicEngine } from "./ProductBasicEngine.entity.js";
+import { Image } from "./Image.entity.js";
 
 @Entity('product')
 export class Product extends Base {
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column()
-  @ApiProperty({ default: 'honda-civic' })
+  @Column({ nullable: false })
   name: string
 
   @Column()
-  @ApiProperty({ default: 'honda-civic' })
   shortDesciption: string
 
   @Column()
-  @ApiProperty({ default: 'honda-civic' })
   textIntro: string
 
-  @Column()
-  @ApiProperty({ default: '5000' })
-  price: string
+  @Column({ nullable: true, default: 0 })
+  price: number
 
-  @Column()
-  @ApiProperty({ default: 'NEW' })
+  @Column({ default: 'NEW' })
   kind: string
 
-  @Column()
-  @ApiProperty({ default: '1' })
-  view: string
-
-  @Column()
-  @ApiProperty({ default: 'Hj-1' })
+  @Column({ nullable: false })
   color: string
 
-  @Column()
-  @ApiProperty({ default: 5 })
+  @Column({ default: 4 })
   seat: number
 
   @Column({ nullable: true })
-  @ApiProperty({ default: null })
   thumbnail: string
 
-  @ApiProperty({ default: 1 })
-  @ManyToOne(() => Category, (category) => category.products)
+  @ManyToOne(() => Category, (category) => category.products, { eager: true })
   @JoinColumn()
   category: Relation<Category>
 
-  @ApiProperty({ default: 1 })
   @ManyToOne(() => ColorGroup)
   @JoinColumn()
   colorGroup: Relation<ColorGroup>
 
-  @ApiProperty({ default: 1 })
   @ManyToOne(() => ProductBasicParam)
   @JoinColumn()
   productBasicParam: Relation<ProductBasicParam>
 
-  @ApiProperty({ default: 1 })
   @ManyToOne(() => ProductBasicSize)
   @JoinColumn()
   productBasicSize: Relation<ProductBasicSize>
 
-  @ApiProperty({ default: 1 })
   @ManyToOne(() => ProductBasicEngine)
-  @JoinColumn()
+  @JoinColumn({})
   productBasicEngine: Relation<ProductBasicEngine>
 
   @OneToMany(() => Image, (image) => image.product)

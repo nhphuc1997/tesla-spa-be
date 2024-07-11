@@ -1,49 +1,38 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { Base } from "./Base.entity";
-import { ApiProperty } from "@nestjs/swagger";
+import { Base } from "./Base.entity.js";
 
 @Entity('product_basic_engine')
 export class ProductBasicEngine extends Base {
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column()
-  @ApiProperty({ default: 'CITY G	| CITY L | CITY RS' })
+  @Column({ nullable: true })
   name: string
 
-  @Column()
-  @ApiProperty({ default: '1.5L i-VTEC DOHC 4 xi lanh thẳng hàng, 16 van' })
+  @Column({ nullable: true })
   code: string
 
-  @Column()
-  @ApiProperty({ default: 'I4, 4 strokes' })
+  @Column({ nullable: true })
   type: string
 
-  @Column()
-  @ApiProperty({ default: '1498' })
+  @Column({ nullable: true })
   displacementVol: string
 
-  @Column()
-  @ApiProperty({ default: '119 (89 kW)/6.600' })
+  @Column({ nullable: true })
   maxRound: string
 
-  @Column()
-  @ApiProperty({ default: '145/4.300' })
+  @Column({ nullable: true })
   maxMoment: string
 
-  @Column()
-  @ApiProperty({ default: 'EURO 4,7' })
+  @Column({ nullable: true })
   standH2O: string
 
-  @Column()
-  @ApiProperty({ default: 'Kiểu MacPherson' })
+  @Column({ nullable: true })
   gear: string
 
-  @Column()
-  @ApiProperty({ default: 'AWD' })
+  @Column({ nullable: true })
   moveSystem: string
 
-  @Column()
-  @ApiProperty({ default: 'Eco/Normal/Sport' })
+  @Column({ nullable: true })
   driverMode: string
 }

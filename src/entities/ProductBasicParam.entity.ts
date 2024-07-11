@@ -1,25 +1,20 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { Base } from "./Base.entity";
-import { ApiProperty } from "@nestjs/swagger";
+import { Base } from "./Base.entity.js";
 
 @Entity('product_basic_param')
 export class ProductBasicParam extends Base {
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column()
-  @ApiProperty({ default: 'CITY G	| CITY L | CITY RS' })
+  @Column({ nullable: true })
   name: string
 
-  @Column()
-  @ApiProperty({ default: '402mi' })
+  @Column({ nullable: true })
   total_capacity: string
 
-  @Column()
-  @ApiProperty({ default: '145/4.300' })
+  @Column({ nullable: true })
   moment: string
 
-  @Column()
-  @ApiProperty({ default: '3.1sec' })
+  @Column({ nullable: true })
   acceleration: string
 }

@@ -1,10 +1,9 @@
 import { Column, Entity, JoinColumn, OneToMany, PrimaryGeneratedColumn, Relation } from "typeorm";
-import { Base } from "./Base.entity";
-import { ApiProperty } from "@nestjs/swagger";
-import { Product } from "./Product.entity";
-import { OptionColor } from "./OptionColor.entity";
-import { OptionWheel } from "./OptionWheel.entity";
-import { OptionInterator } from "./OptionInterator.entity";
+import { Base } from "./Base.entity.js";
+import { Product } from "./Product.entity.js";
+import { OptionColor } from "./OptionColor.entity.js";
+import { OptionWheel } from "./OptionWheel.entity.js";
+import { OptionInterator } from "./OptionInterator.entity.js";
 
 @Entity('category')
 export class Category extends Base {
@@ -12,11 +11,9 @@ export class Category extends Base {
   id: number
 
   @Column()
-  @ApiProperty({ default: 'honda' })
   name: string
 
   @Column()
-  @ApiProperty({ default: 'honda' })
   value: string
 
   @OneToMany(() => Product, (product) => product.category)

@@ -13,7 +13,6 @@ async function bootstrap() {
 
   app.useGlobalInterceptors(new SuccessInterceptor());
   app.useGlobalInterceptors(new ErrorsInterceptor());
-  // app.setGlobalPrefix(config.get<string>('APP_PREFIX'));
   app.enableCors();
 
   await app.listen(config.get<string>('APP_PORT'));

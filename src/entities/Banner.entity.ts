@@ -1,21 +1,14 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { Base } from "./Base.entity";
-import { ApiProperty } from "@nestjs/swagger";
+import { File } from "./File.entity.js";
 
 @Entity('banner')
-export class Banner extends Base {
+export class Banner extends File {
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column()
-  @ApiProperty({ default: 'http://google.com' })
-  url: string
-
-  @Column()
-  @ApiProperty({ default: 1 })
+  @Column({ nullable: true })
   orderNo: number
 
-  @Column()
-  @ApiProperty({ default: true })
-  active: string
+  @Column({ nullable: true, default: 1 })
+  active: boolean
 }
