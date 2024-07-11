@@ -4,7 +4,7 @@ import {
   ManyToMany,
   ManyToOne, OneToMany, PrimaryGeneratedColumn, Relation
 } from "typeorm";
-import { Base } from "./Base.entity.js";
+import { File } from "./File.entity.js";
 import { Category } from "./Category.entity.js";
 import { ColorGroup } from "./ColorGroup.entity.js";
 import { ProductBasicParam } from "./ProductBasicParam.entity.js";
@@ -13,7 +13,7 @@ import { ProductBasicEngine } from "./ProductBasicEngine.entity.js";
 import { Image } from "./Image.entity.js";
 
 @Entity('product')
-export class Product extends Base {
+export class Product extends File {
   @PrimaryGeneratedColumn()
   id: number
 

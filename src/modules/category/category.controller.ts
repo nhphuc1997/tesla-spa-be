@@ -1,8 +1,8 @@
 import { Controller } from '@nestjs/common';
 import { CategoryService } from './category.service';
 import { ApiTags } from '@nestjs/swagger';
-import { Category } from 'src/entities/Category.entity';
 import { Crud, CrudController } from '@dataui/crud';
+import { Category } from 'src/entities/Category.entity';
 
 @ApiTags('CATEGORY API')
 @Crud({
@@ -15,7 +15,7 @@ import { Crud, CrudController } from '@dataui/crud';
     }
   }
 })
-@Controller('tesla-service/categories')
+@Controller('backend/categories')
 export class CategoryController implements CrudController<Category> {
   constructor(public readonly service: CategoryService) { }
 }

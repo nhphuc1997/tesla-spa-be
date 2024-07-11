@@ -16,7 +16,7 @@ import { Order } from 'src/entities/Order.entity';
     }
   }
 })
-@Controller('tesla-service/orders')
+@Controller('backend/orders')
 export class OrderController implements CrudController<Order> {
   constructor(public readonly service: OrderService) { }
 }

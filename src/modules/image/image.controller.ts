@@ -5,7 +5,7 @@ import { Image } from 'src/entities/Image.entity';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('IMAGE API')
-@Controller('tesla-service/images')
+@Controller('backend/images')
 @Crud({
   model: { type: Image }
 })

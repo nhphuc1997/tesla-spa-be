@@ -6,7 +6,7 @@ import { BannerServie } from './banner.service';
 
 @ApiTags('BANNER API')
 @Crud({ model: { type: Banner } })
-@Controller('tesla-service/banners')
+@Controller('backend/banners')
 export class BannerController implements CrudController<Banner> {
   constructor(public readonly service: BannerServie) { }
 }

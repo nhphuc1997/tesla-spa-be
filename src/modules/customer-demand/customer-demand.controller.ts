@@ -8,7 +8,7 @@ import { CustomerDemand } from 'src/entities/CustomerDemand.entity';
 @Crud({
   model: { type: CustomerDemand }
 })
-@Controller('tesla-service/customer-demands')
+@Controller('backend/customer-demands')
 export class CustomerDemandController implements CrudController<CustomerDemand> {
   constructor(public readonly service: CustomerDemandService) { }
 }
