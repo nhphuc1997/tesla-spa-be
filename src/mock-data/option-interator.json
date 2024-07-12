@@ -4,90 +4,99 @@
       "name": "white",
       "imageUrl": "http://google.com",
       "price": "3500000",
-      "category": 1
+      "categoryId": 1,
+      "description": "white"
     },
     {
       "name": "black",
       "imageUrl": "http://google.com",
       "price": "7500000",
-      "category": 1
+      "categoryId": 1,
+      "description": "black"
     },
     {
       "name": "beige",
       "imageUrl": "http://google.com",
       "price": "7500000",
-      "category": 1
+      "categoryId": 1,
+      "description": "beige"
     },
-
     {
       "name": "white",
       "imageUrl": "http://google.com",
       "price": "27500000",
-      "category": 2
+      "categoryId": 2,
+      "description": "white"
     },
     {
       "name": "black",
       "imageUrl": "http://google.com",
       "price": "75000000",
-      "category": 2
+      "categoryId": 2,
+      "description": "black"
     },
-
     {
       "name": "white",
       "imageUrl": "http://google.com",
       "price": "27500000",
-      "category": 3
+      "categoryId": 3,
+      "description": "white"
     },
     {
       "name": "black",
       "imageUrl": "http://google.com",
       "price": "175000000",
-      "category": 3
+      "categoryId": 3,
+      "description": "black"
     },
-
     {
       "name": "white",
       "imageUrl": "http://google.com",
       "price": "105000000",
-      "category": 4
+      "categoryId": 4,
+      "description": "white"
     },
     {
       "name": "black",
       "imageUrl": "http://google.com",
       "price": "72000000",
-      "category": 4
+      "categoryId": 4,
+      "description": "black"
     },
     {
       "name": "Đỏ",
       "imageUrl": "http://google.com",
       "price": "20000000",
-      "category": 4
+      "categoryId": 4,
+      "description": "Đỏ"
     },
-
     {
       "name": "white",
       "imageUrl": "http://google.com",
       "price": "37500000",
-      "category": 5
+      "categoryId": 5,
+      "description": "white"
     },
     {
       "name": "black",
       "imageUrl": "http://google.com",
       "price": "72000000",
-      "category": 5
+      "categoryId": 5,
+      "description": "black"
     },
-
     {
       "name": "white",
       "imageUrl": "http://google.com",
       "price": "37500000",
-      "category": 6
+      "categoryId": 6,
+      "description": "white"
     },
     {
       "name": "beige",
       "imageUrl": "http://google.com",
       "price": "72000000",
-      "category": 6
+      "categoryId": 6,
+      "description": "beige"
     }
   ]
 }
