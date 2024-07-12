@@ -79,8 +79,5 @@ export class Product extends File {
 
   @OneToMany(() => Image, (image) => image.product)
   @JoinColumn()
-  image: Relation<Image[]>
-
-  @Column({})
-  imageId: Relation<Image>
+  images: Relation<Image[]>
 }
