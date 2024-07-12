@@ -1,90 +1,90 @@
 {
   "bulk": [
     {
-      "description": "Trắng",
+      "name": "white",
       "imageUrl": "http://google.com",
       "price": "3500000",
       "category": 1
     },
     {
-      "description": "Đen",
+      "name": "black",
       "imageUrl": "http://google.com",
       "price": "7500000",
       "category": 1
     },
     {
-      "description": "Da",
+      "name": "beige",
       "imageUrl": "http://google.com",
       "price": "7500000",
       "category": 1
     },
 
     {
-      "description": "Trắng",
+      "name": "white",
       "imageUrl": "http://google.com",
       "price": "27500000",
       "category": 2
     },
     {
-      "description": "Đen",
+      "name": "black",
       "imageUrl": "http://google.com",
       "price": "75000000",
       "category": 2
     },
 
     {
-      "description": "Trắng",
+      "name": "white",
       "imageUrl": "http://google.com",
       "price": "27500000",
       "category": 3
     },
     {
-      "description": "Đen",
+      "name": "black",
       "imageUrl": "http://google.com",
       "price": "175000000",
       "category": 3
     },
 
     {
-      "description": "Trắng",
+      "name": "white",
       "imageUrl": "http://google.com",
       "price": "105000000",
       "category": 4
     },
     {
-      "description": "Đen",
+      "name": "black",
       "imageUrl": "http://google.com",
       "price": "72000000",
       "category": 4
     },
     {
-      "description": "Đỏ",
+      "name": "Đỏ",
       "imageUrl": "http://google.com",
       "price": "20000000",
       "category": 4
     },
 
     {
-      "description": "Trắng",
+      "name": "white",
       "imageUrl": "http://google.com",
       "price": "37500000",
       "category": 5
     },
     {
-      "description": "Đen",
+      "name": "black",
       "imageUrl": "http://google.com",
       "price": "72000000",
       "category": 5
     },
 
     {
-      "description": "Trắng",
+      "name": "white",
       "imageUrl": "http://google.com",
       "price": "37500000",
       "category": 6
     },
     {
-      "description": "Da",
+      "name": "beige",
       "imageUrl": "http://google.com",
       "price": "72000000",
       "category": 6
