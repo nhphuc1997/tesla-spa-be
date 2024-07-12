@@ -1,4 +1,4 @@
-import { BaseEntity, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
+import { Column } from "typeorm";
 import { Base } from "./Base.entity.js";
 
 export class File extends Base {

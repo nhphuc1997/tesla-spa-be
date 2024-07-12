@@ -1,41 +1,42 @@
 import {
   Column, Entity, JoinColumn,
-  JoinTable,
-  ManyToMany,
   ManyToOne, OneToMany, PrimaryGeneratedColumn, Relation
 } from "typeorm";
-import { File } from "./File.entity.js";
 import { Category } from "./Category.entity.js";
 import { ColorGroup } from "./ColorGroup.entity.js";
 import { ProductBasicParam } from "./ProductBasicParam.entity.js";
 import { ProductBasicSize } from "./ProductBasicSize.entity.js";
 import { ProductBasicEngine } from "./ProductBasicEngine.entity.js";
 import { Image } from "./Image.entity.js";
+import { File } from "./File.entity.js";
 
 @Entity('product')
 export class Product extends File {
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column({ nullable: false })
+  @Column({ nullable: true })
   name: string
 
-  @Column()
-  shortDesciption: string
+  @Column({ nullable: true })
+  shortDescription: string
 
-  @Column()
+  @Column({ nullable: true })
+  description: string
+
+  @Column({ nullable: true })
   textIntro: string
 
   @Column({ nullable: true, default: 0 })
   price: number
 
-  @Column({ default: 'NEW' })
+  @Column({ nullable: true, default: 'NEW' })
   kind: string
 
-  @Column({ nullable: false })
+  @Column({ nullable: true })
   color: string
 
-  @Column({ default: 4 })
+  @Column({ nullable: true, default: 4 })
   seat: number
 
   @Column({ nullable: true })
