@@ -21,7 +21,7 @@ export class Product extends File {
   @Column({ nullable: true })
   shortDescription: string
 
-  @Column({ nullable: true })
+  @Column({ nullable: true, type: 'text' })
   description: string
 
   @Column({ nullable: true })
@@ -40,13 +40,7 @@ export class Product extends File {
   seat: number
 
   @Column({ nullable: true })
-  thumbnail: string
-
-  @Column({ nullable: true })
   manufactureYear: number
-
-  @Column({ type: 'text', nullable: true })
-  desciption: string
 
   @ManyToOne(() => Category, (category) => category.products, { eager: true })
   @JoinColumn()
@@ -86,4 +80,7 @@ export class Product extends File {
   @OneToMany(() => Image, (image) => image.product)
   @JoinColumn()
   images: Relation<Image[]>
+
+  @Column({})
+  imageId: Relation<Image>
 }
