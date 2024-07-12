@@ -41,6 +41,12 @@ export class Product extends File {
   @Column({ nullable: true })
   thumbnail: string
 
+  @Column({ nullable: true })
+  manufactureYear: number
+
+  @Column({ type: 'text', nullable: true })
+  desciption: string
+
   @ManyToOne(() => Category, (category) => category.products, { eager: true })
   @JoinColumn()
   category: Relation<Category>

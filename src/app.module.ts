@@ -18,6 +18,8 @@ import { BannerModule } from './modules/banner/banner.module';
 import { ProductModule } from './modules/product/product.module';
 import { CategoryModule } from './modules/category/category.module';
 import { OrderModule } from './modules/order/order.module';
+import { ColorGroupModule } from './modules/color-group/color-group.module';
+import { RegistryDrivenModule } from './modules/registry-driven/registry-driven.module';
 
 @Module({
   imports: [
@@ -54,7 +56,9 @@ import { OrderModule } from './modules/order/order.module';
     BannerModule,
     ProductModule,
     CategoryModule,
-    OrderModule
+    OrderModule,
+    ColorGroupModule,
+    RegistryDrivenModule
   ],
 })
 export class AppModule { }
