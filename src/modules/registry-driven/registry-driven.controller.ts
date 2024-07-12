@@ -1,8 +1,8 @@
 import { Controller } from '@nestjs/common';
 import { RegistryDrivenService } from './registry-driven.service';
 import { Crud, CrudController } from '@dataui/crud';
-import { RegistryDriven } from 'src/entities/RegistryDriven.entity';
 import { ApiTags } from '@nestjs/swagger';
+import { RegistryDriven } from 'src/entities/RegistryDriven.entity';
 
 @ApiTags('REGISTRY DRIVEN API')
 @Crud({
