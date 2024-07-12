@@ -1,117 +1,117 @@
 {
   "bulk": [
     {
-      "description": "Premium",
+      "name": "Premium",
       "imageUrl": "http://google.com",
       "price": "3000000",
-      "category": 1
+      "categoryId": 1
     },
     {
-      "description": "Limit Edition",
+      "name": "Limit Edition",
       "imageUrl": "http://google.com",
       "price": "5000000",
-      "category": 1
+      "categoryId": 1
     },
     {
-      "description": "Standard",
+      "name": "Standard",
       "imageUrl": "http://google.com",
       "price": "1000000",
-      "category": 1
+      "categoryId": 1
     },
 
     {
-      "description": "Premium",
+      "name": "Premium",
       "imageUrl": "http://google.com",
       "price": "13500000",
-      "category": 2
+      "categoryId": 2
     },
     {
-      "description": "Limit Edition",
+      "name": "Limit Edition",
       "imageUrl": "http://google.com",
       "price": "13700000",
-      "category": 2
+      "categoryId": 2
     },
     {
-      "description": "Standard Basic",
+      "name": "Standard Basic",
       "imageUrl": "http://google.com",
       "price": "13400000",
-      "category": 2
+      "categoryId": 2
     },
     {
-      "description": "Standard Ultra",
+      "name": "Standard Ultra",
       "imageUrl": "http://google.com",
       "price": "9000000",
-      "category": 2
+      "categoryId": 2
     },
 
     {
-      "description": "Premium",
+      "name": "Premium",
       "imageUrl": "http://google.com",
       "price": "13500000",
-      "category": 3
+      "categoryId": 3
     },
     {
-      "description": "Limit Edition",
+      "name": "Limit Edition",
       "imageUrl": "http://google.com",
       "price": "12000000",
-      "category": 3
+      "categoryId": 3
     },
 
     {
-      "description": "Limit Edition",
+      "name": "Limit Edition",
       "imageUrl": "http://google.com",
       "price": "20000000",
-      "category": 4
+      "categoryId": 4
     },
 
     {
-      "description": "Premium",
+      "name": "Premium",
       "imageUrl": "http://google.com",
       "price": "13000000",
-      "category": 5
+      "categoryId": 5
     },
     {
-      "description": "Limit Edition",
+      "name": "Limit Edition",
       "imageUrl": "http://google.com",
       "price": "50000000",
-      "category": 5
+      "categoryId": 5
     },
     {
-      "description": "Standard",
+      "name": "Standard",
       "imageUrl": "http://google.com",
       "price": "10000000",
-      "category": 5
+      "categoryId": 5
     },
 
     {
-      "description": "Premium Ultra",
+      "name": "Premium Ultra",
       "imageUrl": "http://google.com",
       "price": "13000000",
-      "category": 6
+      "categoryId": 6
     },
     {
-      "description": "Limit Edition",
+      "name": "Limit Edition",
       "imageUrl": "http://google.com",
       "price": "50000000",
-      "category": 6
+      "categoryId": 6
     },
     {
-      "description": "Limit Ultra",
+      "name": "Limit Ultra",
       "imageUrl": "http://google.com",
       "price": "150000000",
-      "category": 6
+      "categoryId": 6
     },
     {
-      "description": "Premium",
+      "name": "Premium",
       "imageUrl": "http://google.com",
       "price": "25000000",
-      "category": 6
+      "categoryId": 6
     },
     {
-      "description": "Instinct Edition",
+      "name": "Instinct Edition",
       "imageUrl": "http://google.com",
       "price": "350000000",
-      "category": 6
+      "categoryId": 6
     }
   ]
 }
