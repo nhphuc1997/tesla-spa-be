@@ -6,13 +6,6 @@ import { ProductModule } from './modules/product/product.module';
 import { CategoryModule } from './modules/category/category.module';
 import { OrderModule } from './modules/order/order.module';
 import { ColorGroupModule } from './modules/color-group/color-group.module';
-import { RegistryDrivenModule } from './modules/registry-driven/registry-driven.module';
-import { OptionColorModule } from './modules/option-color/option-color.module';
-import { OptionInteratorModule } from './modules/option-interator/option-interator.module';
-import { OptionWheelModule } from './modules/option-wheel/option-wheel.module';
-import { ProductBasicParamModule } from './modules/product-basic-param/product-basic-param.module';
-import { ProductBasicSizeModule } from './modules/product-basic-size/product-basic-size.module';
-import { ProductBasicEngineModule } from './modules/product-basic-engine/product-basic-engine.module';
 import { Alloy } from './entities/Alloy.entity';
 import { Banner } from './entities/Banner.entity';
 import { BookTestDrive } from './entities/BookTestDrive.entity';
@@ -62,13 +55,6 @@ import { Technical } from './entities/Technical.entity';
     CategoryModule,
     OrderModule,
     ColorGroupModule,
-    RegistryDrivenModule,
-    OptionColorModule,
-    OptionInteratorModule,
-    OptionWheelModule,
-    ProductBasicParamModule,
-    ProductBasicSizeModule,
-    ProductBasicEngineModule
   ],
 })
 export class AppModule { }
