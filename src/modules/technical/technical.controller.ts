@@ -2,7 +2,9 @@ import { Controller } from '@nestjs/common';
 import { TechnicalService } from './technical.service';
 import { Crud, CrudController } from '@dataui/crud';
 import { Technical } from 'src/entities/Technical.entity';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('TECHNICAL API')
 @Controller('technical')
 @Crud({
   model: { type: Technical }

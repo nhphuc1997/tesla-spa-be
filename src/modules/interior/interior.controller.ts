@@ -2,7 +2,9 @@ import { Controller } from '@nestjs/common';
 import { InteriorService } from './interior.service';
 import { Crud, CrudController } from '@dataui/crud';
 import { Interior } from 'src/entities/Interior.entity';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('INTERIOR API')
 @Controller('interior')
 @Crud({
   model: { type: Interior }
