@@ -4,11 +4,9 @@ import {
 } from "typeorm";
 import { Category } from "./Category.entity.js";
 import { ColorGroup } from "./ColorGroup.entity.js";
-import { ProductBasicParam } from "./ProductBasicParam.entity.js";
-import { ProductBasicSize } from "./ProductBasicSize.entity.js";
-import { ProductBasicEngine } from "./ProductBasicEngine.entity.js";
-import { Image } from "./Image.entity.js";
 import { File } from "./File.entity.js";
+import { Technical } from "./Technical.entity.js";
+import { ProductImage } from "./ProductImage.entity.js";
 
 @Entity('product')
 export class Product extends File {
@@ -23,9 +21,6 @@ export class Product extends File {
 
   @Column({ nullable: true, type: 'text' })
   description: string
-
-  @Column({ nullable: true })
-  textIntro: string
 
   @Column({ nullable: true, default: 0 })
   price: number
@@ -42,42 +37,28 @@ export class Product extends File {
   @Column({ nullable: true })
   manufactureYear: number
 
-  @ManyToOne(() => Category, (category) => category.products, { eager: true })
+  @ManyToOne(() => Category)
   @JoinColumn()
   category: Relation<Category>
-
-  @Column()
-  categoryId: Relation<Category>
 
   @ManyToOne(() => ColorGroup)
   @JoinColumn()
   colorGroup: Relation<ColorGroup>
 
+  @ManyToOne(() => Technical)
+  @JoinColumn()
+  technical: Relation<Technical>
+
+  @OneToMany(() => ProductImage, productImage => productImage)
+  @JoinColumn()
+  images: Relation<ProductImage[]>
+
+  @Column()
+  categoryId: Relation<Category>
+
   @Column()
   colorGroupId: Relation<ColorGroup>
 
-  @ManyToOne(() => ProductBasicParam)
-  @JoinColumn()
-  productBasicParam: Relation<ProductBasicParam>
-
   @Column()
-  productBasicParamId: Relation<ProductBasicParam>
-
-  @ManyToOne(() => ProductBasicSize)
-  @JoinColumn()
-  productBasicSize: Relation<ProductBasicSize>
-
-  @Column()
-  productBasicSizeId: Relation<ProductBasicSize>
-
-  @ManyToOne(() => ProductBasicEngine)
-  @JoinColumn({})
-  productBasicEngine: Relation<ProductBasicEngine>
-
-  @Column({})
-  productBasicEngineId: Relation<ProductBasicEngine>
-
-  @OneToMany(() => Image, (image) => image.product)
-  @JoinColumn()
-  images: Relation<Image[]>
+  technicalId: Relation<Technical>
 }

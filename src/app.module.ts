@@ -13,19 +13,18 @@ import { OptionWheelModule } from './modules/option-wheel/option-wheel.module';
 import { ProductBasicParamModule } from './modules/product-basic-param/product-basic-param.module';
 import { ProductBasicSizeModule } from './modules/product-basic-size/product-basic-size.module';
 import { ProductBasicEngineModule } from './modules/product-basic-engine/product-basic-engine.module';
+import { Alloy } from './entities/Alloy.entity';
 import { Banner } from './entities/Banner.entity';
+import { BookTestDrive } from './entities/BookTestDrive.entity';
 import { Category } from './entities/Category.entity';
-import { OptionColor } from './entities/OptionColor.entity';
-import { OptionInterator } from './entities/OptionInterator.entity';
-import { OptionWheel } from './entities/OptionWheel.entity';
+import { ColorGroup } from './entities/ColorGroup.entity';
+import { Exterior } from './entities/Exterior.entity';
+import { Interior } from './entities/Interior.entity';
+import { Material } from './entities/Material.entity';
 import { Order } from './entities/Order.entity';
 import { Product } from './entities/Product.entity';
-import { ProductBasicParam } from './entities/ProductBasicParam.entity';
-import { ProductBasicSize } from './entities/ProductBasicSize.entity';
-import { ProductBasicEngine } from './entities/ProductBasicEngine.entity';
-import { ColorGroup } from './entities/ColorGroup.entity';
-import { CustomerDemand } from './entities/CustomerDemand.entity';
-import { Image } from './entities/Image.entity';
+import { ProductImage } from './entities/ProductImage.entity';
+import { Technical } from './entities/Technical.entity';
 
 @Module({
   imports: [
@@ -41,19 +40,18 @@ import { Image } from './entities/Image.entity';
         password: config.get('APP_DB_PASSWORD'),
         database: config.get('APP_DB_DATABASE'),
         entities: [
+          Alloy,
           Banner,
+          BookTestDrive,
           Category,
-          OptionColor,
-          OptionInterator,
-          OptionWheel,
+          ColorGroup,
+          Exterior,
+          Interior,
+          Material,
           Order,
           Product,
-          ProductBasicParam,
-          ProductBasicSize,
-          ProductBasicEngine,
-          ColorGroup,
-          Image,
-          CustomerDemand,
+          ProductImage,
+          Technical
         ],
         autoLoadEntities: true,
         synchronize: true,

@@ -2,7 +2,7 @@ import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColum
 import { Base } from "./Base.entity.js";
 import { Product } from "./Product.entity.js";
 
-@Entity('color')
+@Entity('color_group')
 export class ColorGroup extends Base {
   @PrimaryGeneratedColumn()
   id: number

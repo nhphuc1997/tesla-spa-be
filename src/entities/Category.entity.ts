@@ -1,9 +1,9 @@
 import { Column, Entity, JoinColumn, OneToMany, PrimaryGeneratedColumn, Relation } from "typeorm";
 import { Base } from "./Base.entity.js";
-import { Product } from "./Product.entity.js";
-import { OptionColor } from "./OptionColor.entity.js";
-import { OptionWheel } from "./OptionWheel.entity.js";
-import { OptionInterator } from "./OptionInterator.entity.js";
+import { Material } from "./Material.entity.js";
+import { Exterior } from "./Exterior.entity.js";
+import { Interior } from "./Interior.entity.js";
+import { Alloy } from "./Alloy.entity.js";
 
 @Entity('category')
 export class Category extends Base {
@@ -13,19 +13,19 @@ export class Category extends Base {
   @Column()
   name: string
 
-  @OneToMany(() => Product, (product) => product.category)
+  @OneToMany(() => Material, material => material)
   @JoinColumn()
-  products: Relation<Product>
+  material: Relation<Material>
 
-  @OneToMany(() => OptionColor, (color) => color.category)
+  @OneToMany(() => Exterior, exterior => exterior)
   @JoinColumn()
-  optionColor: Relation<OptionColor[]>
+  exterior: Relation<Exterior>
 
-  @OneToMany(() => OptionWheel, (wheel) => wheel.category)
+  @OneToMany(() => Interior, interior => interior)
   @JoinColumn()
-  optionWheel: Relation<OptionWheel[]>
+  interior: Relation<Interior>
 
-  @OneToMany(() => OptionInterator, (interator) => interator.category)
+  @OneToMany(() => Alloy, alloy => alloy)
   @JoinColumn()
-  optionInterator: Relation<OptionInterator[]>
+  alloy: Relation<Alloy>
 }
