@@ -1,22 +1,22 @@
 {
   "bulk": [
     {
-      "name": "Trắng"
+      "name": "white"
     },
     {
-      "name": "Đỏ"
+      "name": "Red"
     },
     {
-      "name": "Xám"
+      "name": "Grey"
     },
     {
-      "name": "Xanh"
+      "name": "Blue"
     },
     {
       "name": "Titan"
     },
     {
-      "name": "Đen"
+      "name": "Black"
     }
   ]
 }
