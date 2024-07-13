@@ -18,6 +18,13 @@ import { Order } from './entities/Order.entity';
 import { Product } from './entities/Product.entity';
 import { ProductImage } from './entities/ProductImage.entity';
 import { Technical } from './entities/Technical.entity';
+import { AlloyModule } from './modules/alloy/alloy.module';
+import { BookTestDriveModule } from './modules/book-test-drive/book-test-drive.module';
+import { ExteriorModule } from './modules/exterior/exterior.module';
+import { InteriorModule } from './modules/interior/interior.module';
+import { MaterialModule } from './modules/material/material.module';
+import { ProductImageModule } from './modules/product-image/product-image.module';
+import { TechnicalModule } from './modules/technical/technical.module';
 
 @Module({
   imports: [
@@ -55,6 +62,13 @@ import { Technical } from './entities/Technical.entity';
     CategoryModule,
     OrderModule,
     ColorGroupModule,
+    AlloyModule,
+    BookTestDriveModule,
+    ExteriorModule,
+    InteriorModule,
+    MaterialModule,
+    ProductImageModule,
+    TechnicalModule
   ],
 })
 export class AppModule { }
