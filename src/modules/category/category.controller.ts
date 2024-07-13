@@ -9,9 +9,10 @@ import { Category } from 'src/entities/Category.entity';
   model: { type: Category },
   query: {
     join: {
-      optionColor: { eager: true },
-      optionWheel: { eager: true },
-      optionInterator: { eager: true },
+      material: { eager: true },
+      exterior: { eager: true },
+      interior: { eager: true },
+      alloy: { eager: true },
     }
   }
 })

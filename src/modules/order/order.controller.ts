@@ -10,9 +10,9 @@ import { Order } from 'src/entities/Order.entity';
   query: {
     join: {
       product: { eager: true },
-      optionColor: { eager: true },
-      optionWheel: { eager: true },
-      optionInterator: { eager: true },
+      interior: { eager: true },
+      exterior: { eager: true },
+      alloy: { eager: true },
     }
   }
 })

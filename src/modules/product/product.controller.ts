@@ -10,12 +10,10 @@ import { Product } from 'src/entities/Product.entity';
   model: { type: Product },
   query: {
     join: {
-      productBasicParam: { eager: true },
-      productBasicSize: { eager: true },
-      productBasicEngine: { eager: true },
       category: { eager: true },
-      images: { eager: true },
       colorGroup: { eager: true },
+      technical: { eager: true },
+      images: { eager: true }
     }
   }
 })
