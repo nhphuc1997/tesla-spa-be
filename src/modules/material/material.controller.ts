@@ -5,7 +5,7 @@ import { Material } from 'src/entities/Material.entity';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('MATERIAL API')
-@Controller('material')
+@Controller('backend/material')
 @Crud({
   model: { type: Material }
 })
