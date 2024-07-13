@@ -49,7 +49,7 @@ export class Product extends File {
   @JoinColumn()
   technical: Relation<Technical>
 
-  @OneToMany(() => ProductImage, productImage => productImage)
+  @OneToMany(() => ProductImage, productImage => productImage.product)
   @JoinColumn()
   images: Relation<ProductImage[]>
 

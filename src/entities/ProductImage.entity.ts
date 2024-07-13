@@ -10,7 +10,7 @@ export class ProductImage extends File {
   @Column({ nullable: true })
   name: string
 
-  @ManyToOne(() => Product, (product) => product)
+  @ManyToOne(() => Product, (product) => product.images)
   @JoinColumn()
   product: Relation<Product>
 
