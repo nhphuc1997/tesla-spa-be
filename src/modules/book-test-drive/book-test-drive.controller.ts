@@ -6,7 +6,12 @@ import { BookTestDrive } from 'src/entities/BookTestDrive.entity';
 
 @ApiTags('BOOK TEST DRIVE API')
 @Crud({
-  model: { type: BookTestDrive }
+  model: { type: BookTestDrive },
+  query: {
+    join: {
+      product: { eager: true },
+    }
+  }
 })
 @Controller('backend/book-test-drive')
 export class BookTestDriveController implements CrudController<BookTestDrive> {
