@@ -23,6 +23,9 @@ export class Order extends Base {
   @Column({ nullable: false })
   email: string
 
+  @Column({ nullable: false })
+  amount: number
+
   @ManyToOne(() => Interior, { eager: true })
   @JoinColumn()
   interior: Relation<Interior>
