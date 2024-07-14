@@ -39,20 +39,7 @@ import { TechnicalModule } from './modules/technical/technical.module';
         username: config.get('APP_DB_USERNAME'),
         password: config.get('APP_DB_PASSWORD'),
         database: config.get('APP_DB_DATABASE'),
-        entities: [
-          Alloy,
-          Banner,
-          BookTestDrive,
-          Category,
-          ColorGroup,
-          Exterior,
-          Interior,
-          Material,
-          Order,
-          Product,
-          ProductImage,
-          Technical
-        ],
+        entities: [],
         autoLoadEntities: true,
         synchronize: true,
       })
