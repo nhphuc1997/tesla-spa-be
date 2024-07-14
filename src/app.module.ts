@@ -68,7 +68,7 @@ import { TechnicalModule } from './modules/technical/technical.module';
     InteriorModule,
     MaterialModule,
     ProductImageModule,
-    TechnicalModule
+    TechnicalModule,
   ],
 })
 export class AppModule { }

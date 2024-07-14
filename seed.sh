@@ -5,27 +5,23 @@ curl -X 'POST' \
   -d '{
   "bulk": [
     {
-      "name": "Mercedes-Benz",
-      "value": "mercedes"
+      "name": "Mercedes-Benz"
     },
     {
-      "name": "lexus",
-      "value": "lexus"
+      "name": "lexus"
     },
     {
-      "name": "Audi",
-      "value": "audi"
+      "name": "Audi"
     },
     {
-      "name": "Bentley",
-      "value": "bentley"
+      "name": "Bentley"
     },
     {
-      "name": "BMW",
-      "value": "bmw"
+      "name": "BMW"
     }
   ]
 }'
+
 
 curl -X 'POST' \
   'http://13.213.88.50/backend/color-groups/bulk' \

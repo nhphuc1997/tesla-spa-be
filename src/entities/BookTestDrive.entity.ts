@@ -7,14 +7,29 @@ export class BookTestDrive extends Base {
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column({ nullable: true })
+  @Column({ nullable: false })
   userId: string
+
+  @Column({ nullable: false })
+  email: string
+
+  @Column({ nullable: true })
+  distanceRadius: string
+
+  @Column({ nullable: true })
+  postCode: string
+
+  @Column({ nullable: true })
+  pickedDate: string
 
   @Column({ nullable: true })
   contactNumber: string
 
   @Column({ nullable: true })
-  email: string
+  firstName: string
+
+  @Column({ nullable: true })
+  lastName: string
 
   @ManyToOne(() => Product)
   @JoinColumn()
