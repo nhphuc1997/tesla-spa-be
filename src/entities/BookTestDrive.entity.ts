@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn, Relation } from "typeorm";
+import { Column, Entity, Generated, JoinColumn, ManyToOne, PrimaryGeneratedColumn, Relation } from "typeorm";
 import { Base } from "./Base.entity.js";
 import { Product } from "./Product.entity.js";
 
@@ -7,8 +7,15 @@ export class BookTestDrive extends Base {
   @PrimaryGeneratedColumn()
   id: number
 
+  @Column()
+  @Generated('uuid')
+  bookId: string
+
   @Column({ nullable: false })
   userId: string
+
+  @Column({ nullable: false })
+  contactNumber: string
 
   @Column({ nullable: false })
   email: string
@@ -20,10 +27,7 @@ export class BookTestDrive extends Base {
   postCode: string
 
   @Column({ nullable: true })
-  pickedDate: string
-
-  @Column({ nullable: true })
-  contactNumber: string
+  pickedDate: Date
 
   @Column({ nullable: true })
   firstName: string
@@ -31,7 +35,7 @@ export class BookTestDrive extends Base {
   @Column({ nullable: true })
   lastName: string
 
-  @ManyToOne(() => Product)
+  @ManyToOne(() => Product, { eager: true })
   @JoinColumn()
   product: Relation<Product>
 
