@@ -22,7 +22,7 @@ export class Product extends File {
   @Column({ nullable: true, type: 'text' })
   description: string
 
-  @Column({ nullable: true, default: 0 })
+  @Column({ nullable: true })
   price: number
 
   @Column({ nullable: true, default: 'NEW' })

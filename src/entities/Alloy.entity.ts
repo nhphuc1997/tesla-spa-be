@@ -13,7 +13,7 @@ export class Alloy extends File {
   @Column({ nullable: true })
   description: string
 
-  @Column({ nullable: true, default: 0 })
+  @Column({ nullable: true })
   price: string
 
   @Column()
