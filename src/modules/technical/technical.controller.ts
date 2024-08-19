@@ -5,7 +5,7 @@ import { Technical } from 'src/entities/Technical.entity';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('TECHNICAL API')
-@Controller('backend/technical')
+@Controller('car/backend/technical')
 @Crud({
   model: { type: Technical }
 })

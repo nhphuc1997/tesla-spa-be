@@ -13,7 +13,7 @@ import { BookTestDrive } from 'src/entities/BookTestDrive.entity';
     }
   }
 })
-@Controller('backend/book-test-drive')
+@Controller('car/backend/book-test-drive')
 export class BookTestDriveController implements CrudController<BookTestDrive> {
   constructor(public readonly service: BookTestDriveService) { }
 }

@@ -5,7 +5,7 @@ import { Exterior } from 'src/entities/Exterior.entity';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('EXTERIOR API')
-@Controller('backend/exterior')
+@Controller('car/backend/exterior')
 @Crud({
   model: { type: Exterior }
 })

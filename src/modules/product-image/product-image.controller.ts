@@ -5,7 +5,7 @@ import { ProductImage } from 'src/entities/ProductImage.entity';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('PRODUCT IMAGE API')
-@Controller('backend/product-image')
+@Controller('car/backend/product-image')
 @Crud({
   model: { type: ProductImage }
 })

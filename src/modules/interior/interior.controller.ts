@@ -5,7 +5,7 @@ import { Interior } from 'src/entities/Interior.entity';
 import { ApiTags } from '@nestjs/swagger';
 
 @ApiTags('INTERIOR API')
-@Controller('backend/interior')
+@Controller('car/backend/interior')
 @Crud({
   model: { type: Interior }
 })

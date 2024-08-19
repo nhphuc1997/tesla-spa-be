@@ -8,7 +8,7 @@ import { ColorGroup } from 'src/entities/ColorGroup.entity';
 @Crud({
   model: { type: ColorGroup }
 })
-@Controller('backend/color-groups')
+@Controller('car/backend/color-groups')
 export class ColorGroupController implements CrudController<ColorGroup> {
   constructor(public readonly service: ColorGroupService) { }
 }

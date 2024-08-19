@@ -16,7 +16,7 @@ import { Category } from 'src/entities/Category.entity';
     }
   }
 })
-@Controller('backend/categories')
+@Controller('car/backend/categories')
 export class CategoryController implements CrudController<Category> {
   constructor(public readonly service: CategoryService) { }
 }

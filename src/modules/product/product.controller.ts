@@ -5,7 +5,7 @@ import { ApiTags } from '@nestjs/swagger';
 import { Product } from 'src/entities/Product.entity';
 
 @ApiTags('PRODUCT API')
-@Controller('backend/products')
+@Controller('car/backend/products')
 @Crud({
   model: { type: Product },
   query: {
